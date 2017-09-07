@@ -1,0 +1,69 @@
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+		<div class="col-md-12 small">
+			<i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }} 
+			
+			{% unless page.tags == empty %}
+			<i class="fa fa-tags"></i>
+			<i>{{page.tags | join: ', ' }}</i>
+			{% endunless %}  
+	
+			<i class="fa fa-user"></i> {{ page.author }} 
+			
+			<a class="pull-right" style="font-size: 16pt" title="Edit on GitHub" href="{{ site.github_repo_url }}edit/gh-pages/{{ page.path }}"><i class="fa fa-github-square"></i></a>
+
+		</div>
+    </div>
+	<hr>
+    <div class="content">
+      {{ content }}
+    </div>
+	
+	<hr>
+	{% if page.author == "Robert Muehsig" %}
+    <div class="row">
+		<div class="col-md-3 ">
+    	    <img class="img-responsive center-block" title="Robert Muehsig" src="{{BASE_PATH}}/assets/icons/rmuehsig.png">
+		</div>
+        <div class="col-md-9  col-xs-12">
+           <div class="header center-block">
+                <h2>Written by Robert Muehsig</h2>
+                <p>
+					Software Developer - from Dresden, Germany, now living & <a href="http://en.oneoffixx.com/" title="The product I'm working on: OneOffix">working</a> in Switzerland. <a href="https://mvp.microsoft.com/de-de/PublicProfile/4020675?fullName=Robert%20%20Muehsig">Microsoft MVP</a> &amp; Web Geek.
+					<br>
+					Other Projects: <b><a href="https://github.com/Code-Inside/ExpensiveMeeting" title="ExpensiveMeeting">ExpensiveMeeting</a></b> | <b><a href="http://www.einkoffervollerreisen.de" title="EinKofferVollerReisen.de">EinKofferVollerReisen.de</a></b>
+				</p>
+  				<p class="lead">
+	                <a href="http://twitter.com/robert0muehsig" title="Follow on Twitter">
+                                    <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/robertmuehsig" title="Follow on GitHub">
+                                    <i class="fa fa-github"></i>
+                    </a>
+                    <a href="http://mvp.microsoft.com/en-us/mvp/Robert Muehsig-4020675" title="My MVP Profile">
+                                    <i class="fa fa-windows"></i>
+                    </a>
+                    <a href="http://www.xing.com/profile/Robert_Muehsig" title="Meet me on Xing">
+                                    <i class="fa fa-xing"></i>
+                    </a>
+                    <a href="https://speakerdeck.com/robertmuehsig" title="My slides on SpeakerDeck">
+                                    <i class="fa fa-file-powerpoint-o"></i>
+                    </a>
+                    <a href="http://stackoverflow.com/users/602449/robert-muehsig" title="My Stackoverflow Profile"
+                                    <i class="fa fa-stack-overflow"></i>
+                    </a>
+                  </p>
+           </div>
+        </div>
+    </div>
+	<hr>
+	{% endif %}
+	
+    {% include JB/comments %}
+  </div>
+</div>

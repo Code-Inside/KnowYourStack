@@ -1,0 +1,10 @@
+﻿/* TEAM */
+
+Robert Muehsig
+Software Developer - from Dresden, Germany, now living in Switzerland. ASP.NET MVP & Web Geek.
+Twitter: http://twitter.com/robert0muehsig 
+GitHub: https://github.com/robertmuehsig 
+Microsoft MVP: http://mvp.microsoft.com/en-us/mvp/Robert%20Muehsig-4020675
+XING: http://www.xing.com/profile/Robert_Muehsig
+Speaker Deck: https://speakerdeck.com/robertmuehsig/
+Location: Wil, Switzerland. 

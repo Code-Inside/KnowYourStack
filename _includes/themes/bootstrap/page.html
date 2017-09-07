@@ -1,0 +1,26 @@
+<div class="page-header">
+{% if page.title-image == nil or page.title-image == blank or page.title-image == "" %}
+<h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+{% else %}
+<img title="{{ page.title }}" style="margin: 0 auto;" src="{{BASE_PATH}}{{page.title-image}}">
+{% endif %}
+
+  
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+      {{ content }}
+	  
+	{% unless page.tags == empty %}
+    <ul>
+      {% for tag in page.tags %}
+        <li> {{tag}} </li>
+      {% endfor %}
+    </ul>
+    {% endunless %}  
+	
+    <a style="font-size: 16pt" title="Edit on GitHub" href="{{ site.github_repo_url }}edit/gh-pages/{{ page.path }}"><i class="fa fa-github-square"></i></a>
+
+  </div>
+</div>
