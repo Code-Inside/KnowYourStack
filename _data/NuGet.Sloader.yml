@@ -25,4 +25,4 @@ Drop:
   - Owner: "Code-Inside"
     Repo: "KnowYourStack"
     Branch: "master"
-    FilePath: "_data/NuGetx.json"
+    FilePath: "_data/NuGet.json"
