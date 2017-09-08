@@ -54,7 +54,7 @@ layout: page
     <h2><strong>//</strong> GitHub</h2>
 
 	<div class="row">
-	<div class="col-md-6">
+	<div class="col-md-12">
 
             <div class="list-group">
                 <a href="https://github.com/NuGet/Announcements" class="list-group-item active">
