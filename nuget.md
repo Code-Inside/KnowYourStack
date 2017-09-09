@@ -63,43 +63,7 @@ title: NuGet
                 </a>
 				
 				{% for eventItem in site.data.NuGet.Data.Announcements.Events limit: 10 %}
-				<a href="{{ eventItem.RelatedUrl }}" class="list-group-item">
-                        		<h4 class="list-group-item-heading">
-					{% if eventItem.Type == "PushEvent" %}
-						<i class="fa fa-cloud-upload" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "PullRequestEvent" %}
-						<i class="fa fa-code-fork" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "WatchEvent" %}
-						<i class="fa fa-eye" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "IssuesEvent" %}
-						<i class="fa fa-sticky-note-o" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "IssueCommentEvent" %}
-						<i class="fa fa-commenting" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "PullRequestReviewCommentEvent" %}
-						<i class="fa fa-commenting" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "CreateEvent" %}
-						<i class="fa fa-plus" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "DeleteEvent" %}
-						<i class="fa fa-minus" aria-hidden="true"></i>
-					{% endif %}
-					{% if eventItem.Type == "ForkEvent" %}
-						<i class="fa fa-code-fork" aria-hidden="true"></i>
-					{% endif %}
-					
-					{{ eventItem.RelatedDescription }}
-					
-					</h4>
-                        		<p class="list-group-item-text">
-                            			on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}
-                        		</p>
-                    		</a>
+					{% include DisplayGitHubEvent.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
         </div>
