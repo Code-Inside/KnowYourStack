@@ -52,7 +52,7 @@ title: NuGet
 </section>
 
 <section>
-    <h2><strong>//</strong> GitHub</h2>
+    <h2><strong>//</strong> GitHub x</h2>
 
 	<div class="row">
 	<div class="col-md-12">
