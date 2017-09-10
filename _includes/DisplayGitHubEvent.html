@@ -36,6 +36,9 @@
 	{% if include.eventItem.Type == "PullRequestReviewCommentEvent" %}
 		{% assign icon = 'fa-commenting' %}
 	{% endif %}
+	{% if include.eventItem.Type == "CommitCommentEvent" %}
+		{% assign icon = 'fa-commenting' %}
+	{% endif %}
 	{% if include.eventItem.Type == "CreateEvent" %}
 		{% assign icon = 'fa-plus' %}
 		{% assign color = '#6cc644' %}
