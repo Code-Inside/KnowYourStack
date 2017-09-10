@@ -8,11 +8,11 @@
 		{% assign icon = 'fa-cloud-upload' %}
 	{% endif %}
 	{% if include.eventItem.Type == "PullRequestEvent" %}
+		{% assign icon = 'fa-code-fork' %}
 		{% if include.eventItem.RelatedAction == "opened" %}
 			{% assign color = '#6cc644' %}
-			{% assign icon = 'fa-code-fork' %}
 		{% else %}
-			{% assign icon = 'fa-code-fork' %}
+			{% assign color = '#959da5' %}
 		{% endif %}
 	{% endif %}
 	{% if include.eventItem.Type == "WatchEvent" %}
@@ -20,6 +20,11 @@
 	{% endif %}
 	{% if include.eventItem.Type == "IssuesEvent" %}
 		{% assign icon = 'fa-sticky-note-o' %}
+		{% if include.eventItem.RelatedAction == "opened" %}
+			{% assign color = '#6cc644' %}
+		{% else %}
+			{% assign color = '#cb2431' %}
+		{% endif %}
 	{% endif %}
 	{% if include.eventItem.Type == "IssueCommentEvent" %}
 		{% assign icon = 'fa-commenting' %}
@@ -29,15 +34,17 @@
 	{% endif %}
 	{% if include.eventItem.Type == "CreateEvent" %}
 		{% assign icon = 'fa-plus' %}
+		{% assign color = '#6cc644' %}
 	{% endif %}
 	{% if include.eventItem.Type == "DeleteEvent" %}
 		{% assign icon = 'fa-minus' %}
+		{% assign color = '#cb2431' %}
 	{% endif %}
 	{% if include.eventItem.Type == "ForkEvent" %}
 		{% assign icon = 'fa-code-fork' %}
 	{% endif %}
 	
-	<span class="badge" style="background-color: {{color}}; color: white"><i class="fa {{icon}}" aria-hidden="true"></i></span>	
+	<span class="badge" style="background-color: {{color}}; color: white; width: 32px"><i class="fa {{icon}}" aria-hidden="true"></i></span>	
 					
     <p class="list-group-item-text">
         on {{ include.eventItem.CreatedAt | date_to_long_string }} by {{ include.eventItem.Actor }}
