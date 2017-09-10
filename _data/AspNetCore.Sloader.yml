@@ -1,0 +1,36 @@
+Secrets:
+  TwitterConsumerKey: $$Sloader.SecretTwitterConsumerKey$$
+  TwitterConsumerSecret: $$Sloader.SecretTwitterConsumerSecret$$
+  GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
+
+Crawler:
+  FeedsToCrawl:
+  - Key: .NET Web Development and Tools Blog
+    Url: https://blogs.msdn.microsoft.com/webdev/feed/
+    LoadSocialLinkCounters: false
+  GitHubEventsToCrawl:
+  - Key: Home
+    Repository: aspnet/Home
+  - Key: SignalR
+    Repository: aspnet/SignalR
+  - Key: Mvc
+    Repository: aspnet/Mvc
+  - Key: Identity
+    Repository: aspnet/Identity
+  - Key: Kestrel
+    Repository: aspnet/KestrelHttpServer
+  - Key: Razor
+    Repository: aspnet/Razor
+  - Key: Announcements
+    Repository: aspnet/Announcements
+  TwitterTimelinesToCrawl:
+  - Key: Twitter
+    Handle: aspnet
+    IncludeRetweets: false
+
+Drop:
+  GitHubDrops:
+  - Owner: "Code-Inside"
+    Repo: "KnowYourStack"
+    Branch: "master"
+    FilePath: "_data/AspNetCore.json"
