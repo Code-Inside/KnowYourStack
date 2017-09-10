@@ -11,6 +11,10 @@
 		{% assign icon = 'fa-code-fork' %}
 		{% if include.eventItem.RelatedAction == "opened" %}
 			{% assign color = '#6cc644' %}
+		{% elsif include.eventItem.RelatedAction == "closed" %}
+			{% assign color = '#cb2431' %}
+		{% elsif include.eventItem.RelatedAction == "merged" %}
+			{% assign color = '#6f42c1' %}
 		{% else %}
 			{% assign color = '#959da5' %}
 		{% endif %}
