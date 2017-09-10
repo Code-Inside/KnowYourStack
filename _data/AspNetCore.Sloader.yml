@@ -5,7 +5,7 @@ Secrets:
 
 Crawler:
   FeedsToCrawl:
-  - Key: .NET Web Development and Tools Blog
+  - Key: Blog
     Url: https://blogs.msdn.microsoft.com/webdev/feed/
     LoadSocialLinkCounters: false
   GitHubEventsToCrawl:
