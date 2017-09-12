@@ -54,12 +54,7 @@
 	<span class="badge" style="background-color: {{color}}; color: white; width: 32px"><i class="fa {{icon}}" aria-hidden="true"></i></span>	
 					
     <p class="list-group-item-text">
-		{% assign curr_date = site.time | date: "%Y-%m-%d" %}
-		{% assign item_date = include.eventItem.CreatedAt | date: "%Y-%m-%d" %}
-	
-		{% if curr_date == item_date %}
-			<i class="fa fa-flash" aria-hidden="true" style="color: #ff4700;"></i>
-		{% endif %}
+		{% include DisplayHotIcon.html date=include.eventItem.CreatedAt %}
 	
         on {{ include.eventItem.CreatedAt | date_to_long_string }} by {{ include.eventItem.Actor }}
     </p>

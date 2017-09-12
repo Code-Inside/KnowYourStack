@@ -1,0 +1,6 @@
+{% assign curr_date = site.time | date: "%Y-%m-%d" %}
+{% assign item_date = include.date | date: "%Y-%m-%d" %} 
+
+{% if curr_date == item_date %}
+<i class="fa fa-flash" aria-hidden="true" style="color: #ff4700;"></i>
+{% endif %}
