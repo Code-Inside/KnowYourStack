@@ -1,6 +1,8 @@
 ---
 layout: page
 title: ASP.NET Core
+type: stack
+permalink: "aspnetcore"
 ---
 {% include JB/setup %}
 
@@ -92,7 +94,6 @@ title: ASP.NET Core
 	
 	<div class="tab-content">
 		<div id="Mvc" class="tab-pane fade in active">
-			<h3>Mvc</h3>
 			<div class="list-group">
                 <a href="https://github.com/aspnet/Mvc" class="list-group-item active">
                     <h4 class="list-group-item-heading">aspnet/Mvc</h4>
@@ -104,7 +105,6 @@ title: ASP.NET Core
 			</div>
 		</div>
 		<div id="Razor" class="tab-pane fade in">
-			<h3>Razor</h3>
 			<div class="list-group">
                 <a href="https://github.com/aspnet/Razor" class="list-group-item active">
                     <h4 class="list-group-item-heading">aspnet/Razor</h4>
@@ -116,7 +116,6 @@ title: ASP.NET Core
 			</div>
 		</div>
 		<div id="SignalR" class="tab-pane fade in">
-			<h3>SignalR</h3>
 			<div class="list-group">
                 <a href="https://github.com/aspnet/SignalR" class="list-group-item active">
                     <h4 class="list-group-item-heading">aspnet/SignalR</h4>
@@ -128,7 +127,6 @@ title: ASP.NET Core
 			</div>
 		</div>
 		<div id="Identity" class="tab-pane fade in">
-			<h3>Identity</h3>
 			<div class="list-group">
                 <a href="https://github.com/aspnet/Identity" class="list-group-item active">
                     <h4 class="list-group-item-heading">aspnet/Identity</h4>
@@ -140,7 +138,6 @@ title: ASP.NET Core
 			</div>
 		</div>
 		<div id="Kestrel" class="tab-pane fade in">
-			<h3>Kestrel</h3>
 			<div class="list-group">
                 <a href="https://github.com/aspnet/KestrelHttpServer" class="list-group-item active">
                     <h4 class="list-group-item-heading">aspnet/KestrelHttpServer</h4>
