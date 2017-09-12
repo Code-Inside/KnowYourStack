@@ -19,13 +19,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for feedItem in site.data.AspNetCore.Data.Blog.FeedItems limit: 5 %}
-					<a href="{{ feedItem.Href }}" class="list-group-item">
-                        <h4 class="list-group-item-heading">{{ feedItem.Title }}</h4>
-                        <p class="list-group-item-text">
-							{% include DisplayHotIcon.html date=feedItem.PublishedOn %}
-                            Published on {{ feedItem.PublishedOn | date_to_long_string }}
-                        </p>
-                    </a>
+					{% include DisplayFeedItem.html feedItem=feedItem %}
 				{% endfor %}
             </div>
         </div>
@@ -41,13 +35,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for tweetItem in site.data.AspNetCore.Data.Twitter.Tweets limit: 10 %}
-					<a href="https://twitter.com/{{ tweetItem.UserScreenname }}/status/{{ tweetItem.Id }}" class="list-group-item">
-                        <h4 class="list-group-item-heading">{{ tweetItem.Text }}</h4>
-                        <p class="list-group-item-text">
-							{% include DisplayHotIcon.html date=tweetItem.CreatedAt %}
-                            @{{ tweetItem.UserScreenname }} | Published on {{ tweetItem.CreatedAt | date_to_long_string }}
-                        </p>
-                    </a>
+					{% include DisplayTweetItem.html tweetItem=tweetItem %}
 				{% endfor %}
             </div>
         </div>
@@ -67,7 +55,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.Announcements.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
         </div>
@@ -80,7 +68,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.Home.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
         </div>
@@ -103,7 +91,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.Mvc.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
 		</div>
@@ -114,7 +102,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.Razor.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
 		</div>
@@ -125,7 +113,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.SignalR.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
 		</div>
@@ -136,7 +124,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.Identity.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
 		</div>
@@ -147,7 +135,7 @@ permalink: "aspnetcore"
                 </a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.Kestrel.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
 		</div>

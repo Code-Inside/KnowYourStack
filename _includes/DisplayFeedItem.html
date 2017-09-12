@@ -1,0 +1,7 @@
+<a href="{{ feedItem.Href }}" class="list-group-item">
+    <h4 class="list-group-item-heading">{{ include.feedItem.Title }}</h4>
+    <p class="list-group-item-text">
+        {% include DisplayHotIcon.html date=include.feedItem.PublishedOn %}
+        Published on {{ include.feedItem.PublishedOn | date_to_long_string }}
+    </p>
+</a>

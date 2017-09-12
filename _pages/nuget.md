@@ -19,13 +19,7 @@ permalink: "nuget"
                 </a>
 				
 				{% for feedItem in site.data.NuGet.Data.Blog.FeedItems limit: 5 %}
-					<a href="{{ feedItem.Href }}" class="list-group-item">
-                        <h4 class="list-group-item-heading">{{ feedItem.Title }}</h4>
-                        <p class="list-group-item-text">
-                            {% include DisplayHotIcon.html date=feedItem.PublishedOn %}
-                            Published on {{ feedItem.PublishedOn | date_to_long_string }}
-                        </p>
-                    </a>
+					{% include DisplayFeedItem.html feedItem=feedItem %}
 				{% endfor %}
             </div>
         </div>
@@ -41,13 +35,7 @@ permalink: "nuget"
                 </a>
 				
 				{% for tweetItem in site.data.NuGet.Data.Twitter.Tweets limit: 10 %}
-					<a href="https://twitter.com/{{ tweetItem.UserScreenname }}/status/{{ tweetItem.Id }}" class="list-group-item">
-                        <h4 class="list-group-item-heading">{{ tweetItem.Text }}</h4>
-                        <p class="list-group-item-text">
-                            {% include DisplayHotIcon.html date=tweetItem.CreatedAt %}
-                            @{{ tweetItem.UserScreenname }} | Published on {{ tweetItem.CreatedAt | date_to_long_string }}
-                        </p>
-                    </a>
+					{% include DisplayTweetItem.html tweetItem=tweetItem %}
 				{% endfor %}
             </div>
         </div>
@@ -67,7 +55,7 @@ permalink: "nuget"
                 </a>
 				
 				{% for eventItem in site.data.NuGet.Data.Announcements.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
         </div>
@@ -83,7 +71,7 @@ permalink: "nuget"
                 </a>
 				
 				{% for eventItem in site.data.NuGet.Data.Home.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
         </div>
@@ -96,7 +84,7 @@ permalink: "nuget"
                 </a>
 				
 				{% for eventItem in site.data.NuGet.Data.Gallery.Events limit: 10 %}
-					{% include DisplayGitHubEvent.html eventItem=eventItem %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
         </div>

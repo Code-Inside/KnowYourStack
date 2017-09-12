@@ -1,0 +1,7 @@
+<a href="https://twitter.com/{{ include.tweetItem.UserScreenname }}/status/{{ tweetItem.Id }}" class="list-group-item">
+    <h4 class="list-group-item-heading">{{ include.tweetItem.Text }}</h4>
+    <p class="list-group-item-text">
+        {% include DisplayHotIcon.html date=include.tweetItem.CreatedAt %}
+        @{{ include.tweetItem.UserScreenname }} | Published on {{ include.tweetItem.CreatedAt | date_to_long_string }}
+    </p>
+</a>
