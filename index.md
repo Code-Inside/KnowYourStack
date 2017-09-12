@@ -1,10 +1,10 @@
 --- 
 layout: page 
+title: All KnowYourStack Pages
 --- 
 {% include JB/setup %}
 
 <section>
-    <h2><strong>//</strong> All KnowYourStack Pages</h2>
     <div class="row">
     <div class="col-md-12">
       <div class="list-group">
