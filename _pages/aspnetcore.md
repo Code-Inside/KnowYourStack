@@ -22,6 +22,7 @@ permalink: "aspnetcore"
 					<a href="{{ feedItem.Href }}" class="list-group-item">
                         <h4 class="list-group-item-heading">{{ feedItem.Title }}</h4>
                         <p class="list-group-item-text">
+							{% include DisplayHotIcon.html date=feedItem.PublishedOn %}
                             Published on {{ feedItem.PublishedOn | date_to_long_string }}
                         </p>
                     </a>
@@ -43,6 +44,7 @@ permalink: "aspnetcore"
 					<a href="https://twitter.com/{{ tweetItem.UserScreenname }}/status/{{ tweetItem.Id }}" class="list-group-item">
                         <h4 class="list-group-item-heading">{{ tweetItem.Text }}</h4>
                         <p class="list-group-item-text">
+							{% include DisplayHotIcon.html date=tweetItem.CreatedAt %}
                             @{{ tweetItem.UserScreenname }} | Published on {{ tweetItem.CreatedAt | date_to_long_string }}
                         </p>
                     </a>
