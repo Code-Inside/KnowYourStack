@@ -90,7 +90,7 @@ permalink: "aspnetcore/"
                     <h4 class="list-group-item-heading">aspnet/Mvc</h4>
                 </a>
 				
-				{% for eventItem in site.data.AspNetCore.Data.Mvc.Events limit: 10 %}
+				{% for eventItem in site.data.AspNetCore.Data.Mvc.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -101,7 +101,7 @@ permalink: "aspnetcore/"
                     <h4 class="list-group-item-heading">aspnet/Razor</h4>
                 </a>
 				
-				{% for eventItem in site.data.AspNetCore.Data.Razor.Events limit: 10 %}
+				{% for eventItem in site.data.AspNetCore.Data.Razor.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -112,7 +112,7 @@ permalink: "aspnetcore/"
                     <h4 class="list-group-item-heading">aspnet/SignalR</h4>
                 </a>
 				
-				{% for eventItem in site.data.AspNetCore.Data.SignalR.Events limit: 10 %}
+				{% for eventItem in site.data.AspNetCore.Data.SignalR.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -123,7 +123,7 @@ permalink: "aspnetcore/"
                     <h4 class="list-group-item-heading">aspnet/Identity</h4>
                 </a>
 				
-				{% for eventItem in site.data.AspNetCore.Data.Identity.Events limit: 10 %}
+				{% for eventItem in site.data.AspNetCore.Data.Identity.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -134,7 +134,7 @@ permalink: "aspnetcore/"
                     <h4 class="list-group-item-heading">aspnet/KestrelHttpServer</h4>
                 </a>
 				
-				{% for eventItem in site.data.AspNetCore.Data.Kestrel.Events limit: 10 %}
+				{% for eventItem in site.data.AspNetCore.Data.Kestrel.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>

@@ -90,7 +90,7 @@ permalink: "dotnetcore/"
                     <h4 class="list-group-item-heading">dotnet/coreclr</h4>
                 </a>
 				
-				{% for eventItem in site.data.DotNetCore.Data.CoreCLR.Events limit: 10 %}
+				{% for eventItem in site.data.DotNetCore.Data.CoreCLR.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -101,7 +101,7 @@ permalink: "dotnetcore/"
                     <h4 class="list-group-item-heading">dotnet/CoreFx</h4>
                 </a>
 				
-				{% for eventItem in site.data.DotNetCore.Data.CoreFx.Events limit: 10 %}
+				{% for eventItem in site.data.DotNetCore.Data.CoreFx.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -112,7 +112,7 @@ permalink: "dotnetcore/"
                     <h4 class="list-group-item-heading">dotnet/cli</h4>
                 </a>
 				
-				{% for eventItem in site.data.DotNetCore.Data.CLI.Events limit: 10 %}
+				{% for eventItem in site.data.DotNetCore.Data.CLI.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -123,7 +123,7 @@ permalink: "dotnetcore/"
                     <h4 class="list-group-item-heading">dotnet/standard</h4>
                 </a>
 				
-				{% for eventItem in site.data.DotNetCore.Data.Standard.Events limit: 10 %}
+				{% for eventItem in site.data.DotNetCore.Data.Standard.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -134,7 +134,7 @@ permalink: "dotnetcore/"
                     <h4 class="list-group-item-heading">dotnet/roslyn</h4>
                 </a>
 				
-				{% for eventItem in site.data.DotNetCore.Data.Roslyn.Events limit: 10 %}
+				{% for eventItem in site.data.DotNetCore.Data.Roslyn.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>

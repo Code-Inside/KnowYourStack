@@ -70,7 +70,7 @@ permalink: "nuget/"
                     <h4 class="list-group-item-heading">NuGet/Home</h4>
                 </a>
 				
-				{% for eventItem in site.data.NuGet.Data.Home.Events limit: 10 %}
+				{% for eventItem in site.data.NuGet.Data.Home.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
@@ -83,7 +83,7 @@ permalink: "nuget/"
                     <h4 class="list-group-item-heading">NuGet/NuGetGallery</h4>
                 </a>
 				
-				{% for eventItem in site.data.NuGet.Data.Gallery.Events limit: 10 %}
+				{% for eventItem in site.data.NuGet.Data.Gallery.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
