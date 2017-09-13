@@ -1,6 +1,12 @@
-{% assign curr_date = site.time | date: "%Y-%m-%d" %}
-{% assign item_date = include.date | date: "%Y-%m-%d" %} 
+{% assign today = site.time | date: '%s' %}
+{% assign item_date = include.date | date: '%s' %}
+{% assign dateDiffInDays = today | minus: item_date | divided_by: 86400 %}
 
-{% if curr_date == item_date %}
-<i class="fa fa-flash" aria-hidden="true" title="New!" style="color: #ff4700;"></i>
+{% comment %} 
+Based on https://gist.github.com/roobottom/841fd91bb7b03eaa1948 
+ check if content is from today or yesterday 
+{% endcomment %}
+
+{% if dateDiffInDays < 2 %}
+<i class="fa fa-flash" aria-hidden="true" style="color: #ff4700;"></i>
 {% endif %}

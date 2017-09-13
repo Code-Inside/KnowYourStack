@@ -2,7 +2,7 @@
 layout: page
 title: NuGet
 type: stack
-permalink: "nuget"
+permalink: "nuget/"
 ---
 {% include JB/setup %}
 
