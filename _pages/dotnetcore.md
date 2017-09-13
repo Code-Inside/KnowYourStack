@@ -1,0 +1,143 @@
+---
+layout: page
+title: .NET Core
+type: stack
+permalink: "dotnetcore/"
+---
+{% include JB/setup %}
+
+<section>
+    <h2><strong>//</strong> .NET Blog &amp; Tweets</h2>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="list-group">
+                <a href="https://blogs.msdn.microsoft.com/dotnet" class="list-group-item active">
+                    <h4 class="list-group-item-heading">.NET Blog</h4>
+                </a>
+				
+				{% for feedItem in site.data.DotNetCore.Data.Blog.FeedItems limit: 5 %}
+					{% include DisplayFeedItem.html feedItem=feedItem %}
+				{% endfor %}
+            </div>
+        </div>
+		
+		
+    </div>
+	
+	<div class="row"> 
+        <div class="col-md-12">
+            <div class="list-group">
+                <a href="https://twitter.com/dotnet" class="list-group-item active">
+                    <h4 class="list-group-item-heading">@dotnet on Twitter</h4>
+                </a>
+				
+				{% for tweetItem in site.data.DotNetCore.Data.Twitter.Tweets limit: 10 %}
+					{% include DisplayTweetItem.html tweetItem=tweetItem %}
+				{% endfor %}
+            </div>
+        </div>
+	</div>
+	
+</section>
+
+<section>
+    <h2><strong>//</strong> GitHub</h2>
+
+	<div class="row">
+	<div class="col-md-12">
+
+            <div class="list-group">
+                <a href="https://github.com/dotnet/Announcements" class="list-group-item active">
+                    <h4 class="list-group-item-heading">dotnet/Announcements</h4>
+                </a>
+				
+				{% for eventItem in site.data.DotNetCore.Data.Announcements.Events limit: 10 %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+        </div>
+		
+		<div class="col-md-12">
+
+            <div class="list-group">
+                <a href="https://github.com/dotnet/Home" class="list-group-item active">
+                    <h4 class="list-group-item-heading">dotnet/Home</h4>
+                </a>
+				
+				{% for eventItem in site.data.DotNetCore.Data.Home.Events limit: 10 %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+        </div>
+	</div>
+	
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#CoreCLR">CoreCLR</a></li>
+		<li><a data-toggle="tab" href="#CoreFx">CoreFx</a></li>
+		<li><a data-toggle="tab" href="#CLI">CLI</a></li>
+		<li><a data-toggle="tab" href="#Standard">Standard</a></li>
+		<li><a data-toggle="tab" href="#Roslyn">Roslyn</a></li>
+	</ul>
+	
+	<div class="tab-content">
+		<br>
+		<div id="CoreCLR" class="tab-pane fade in active">
+			<div class="list-group">
+                <a href="https://github.com/dotnet/coreclr" class="list-group-item active">
+                    <h4 class="list-group-item-heading">dotnet/coreclr</h4>
+                </a>
+				
+				{% for eventItem in site.data.DotNetCore.Data.CoreCLR.Events limit: 10 %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+		</div>
+		<div id="CoreFx" class="tab-pane fade in">
+			<div class="list-group">
+                <a href="https://github.com/dotnet/corefx" class="list-group-item active">
+                    <h4 class="list-group-item-heading">dotnet/CoreFx</h4>
+                </a>
+				
+				{% for eventItem in site.data.DotNetCore.Data.CoreFx.Events limit: 10 %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+		</div>
+		<div id="CLI" class="tab-pane fade in">
+			<div class="list-group">
+                <a href="https://github.com/dotnet/cli" class="list-group-item active">
+                    <h4 class="list-group-item-heading">dotnet/cli</h4>
+                </a>
+				
+				{% for eventItem in site.data.DotNetCore.Data.CLI.Events limit: 10 %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+		</div>
+		<div id="Standard" class="tab-pane fade in">
+			<div class="list-group">
+                <a href="https://github.com/dotnet/standard" class="list-group-item active">
+                    <h4 class="list-group-item-heading">dotnet/standard</h4>
+                </a>
+				
+				{% for eventItem in site.data.DotNetCore.Data.Standard.Events limit: 10 %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+		</div>
+		<div id="Roslyn" class="tab-pane fade in">
+			<div class="list-group">
+                <a href="https://github.com/dotnet/roslyn" class="list-group-item active">
+                    <h4 class="list-group-item-heading">dotnet/roslyn</h4>
+                </a>
+				
+				{% for eventItem in site.data.DotNetCore.Data.Roslyn.Events limit: 10 %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
