@@ -1,0 +1,36 @@
+Secrets:
+  TwitterConsumerKey: $$Sloader.SecretTwitterConsumerKey$$
+  TwitterConsumerSecret: $$Sloader.SecretTwitterConsumerSecret$$
+  GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
+
+Crawler:
+  FeedsToCrawl:
+  - Key: Blog
+    Url: https://blogs.msdn.microsoft.com/dotnet/feed/
+    LoadSocialLinkCounters: false
+  GitHubEventsToCrawl:
+  - Key: Home
+    Repository: dotnet/home
+  - Key: Announcements
+    Repository: dotnet/announcements
+  - Key: CoreCLR
+    Repository: dotnet/coreclr
+  - Key: CLI
+    Repository: dotnet/cli
+  - Key: Standard
+    Repository: dotnet/standard
+  - Key: CoreFx
+    Repository: dotnet/corefx
+  - Key: Roslyn
+    Repository: dotnet/roslyn
+  TwitterTimelinesToCrawl:
+  - Key: Twitter
+    Handle: dotnet
+    IncludeRetweets: false
+
+Drop:
+  GitHubDrops:
+  - Owner: "Code-Inside"
+    Repo: "KnowYourStack"
+    Branch: "master"
+    FilePath: "_data/DotNetCore.json"
