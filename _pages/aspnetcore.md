@@ -2,7 +2,7 @@
 layout: page
 title: ASP.NET Core
 type: stack
-permalink: "aspnetcore"
+permalink: "aspnetcore/"
 ---
 {% include JB/setup %}
 
