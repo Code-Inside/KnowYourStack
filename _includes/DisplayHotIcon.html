@@ -4,7 +4,7 @@
 {%   assign today = site.time | date: '%s' %}
 {%   assign item_date = include.date | date: '%s' %}
 
-{%   assign secondsSince = today | minus: item_date     %}
+{%   assign secondsSince = today | plus: item_date     %}
 {%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
 
 hours: {{hoursSince | modulo: 24}}
