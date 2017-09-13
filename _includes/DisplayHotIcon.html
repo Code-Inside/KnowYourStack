@@ -1,6 +1,14 @@
 {% assign curr_date = site.time | date: "%Y-%m-%d" %}
 {% assign item_date = include.date | date: "%Y-%m-%d" %} 
 
+{%   assign today = site.time | date: '%s' %}
+{%   assign item_date = include.date | date: '%s' %}
+
+{%   assign secondsSince = today | minus: item_date     %}
+{%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
+
+hours: {{hoursSince | modulo: 24}}
+
 {% if curr_date == item_date %}
 <i class="fa fa-flash" aria-hidden="true" style="color: #ff4700;"></i>
 {% endif %}
