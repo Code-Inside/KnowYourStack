@@ -1,8 +1,11 @@
 {% assign curr_date = site.time | date: "%Y-%m-%d" %}
 {% assign item_date = include.date | date: "%Y-%m-%d" %} 
 
-{%   assign today = site.time | date: '%s' %}
-{%   assign item_date = include.date | date: '%s' %}
+{% assign today = site.time | date: '%s' %}
+{% assign item_date = include.date | date: '%s' %}
+{% assign dateDiff = today | minus: item_date | divided_by: 86400 %}
+
+datediff: {{dateDiff}}
 
 {%   assign secondsSince = today | plus: item_date     %}
 {%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
