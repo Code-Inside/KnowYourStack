@@ -1,5 +1,9 @@
 {{ if include.data.RunDurationInMilliseconds > 0 }}
-
+ test
 {{ else }}
 <div class="alert alert-info" role="alert">Our crawler needs some time to pick up the latest config and data information. You should see some content here within the next 24 hours. Thanks for your patience!</div>
+{{ endif }}
+
+{{ if include.data == null }}
+<div class="alert alert-info" role="alert">xOur crawler needs some time to pick up the latest config and data information. You should see some content here within the next 24 hours. Thanks for your patience!</div>
 {{ endif }}
