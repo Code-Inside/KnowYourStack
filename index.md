@@ -15,8 +15,8 @@ title: All KnowYourStack Pages
       </div>
       
       <div class="btn-group btn-block ">
-      <a href="{{ site.github_repo_url }}issues/new" class="btn btn-primary">
-        <i class="fa fa-fork" aria-hidden="true"></i> Add your own stack
+      <a href="{{ site.github_repo_url }}issues/new" class="btn btn-primary btn-block">
+        <i class="fa fa-plus" aria-hidden="true"></i> Add your own stack
       </a>
       </div>
     </div>
