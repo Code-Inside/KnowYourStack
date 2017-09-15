@@ -1,7 +1,7 @@
-{{ if include.data.RunDurationInMilliseconds }}
+{% if include.data.RunDurationInMilliseconds %}
 
  test {{include.data.RunDurationInMilliseconds}} a
-{{ else }}
+{% else %}
 <div class="alert alert-info" role="alert">Our crawler needs some time to pick up the latest config and data information. You should see some content here within the next 24 hours. Thanks for your patience!</div>
 
-{{ endif }}
+{% endif %}
