@@ -1,0 +1,28 @@
+Secrets:
+  TwitterConsumerKey: $$Sloader.SecretTwitterConsumerKey$$
+  TwitterConsumerSecret: $$Sloader.SecretTwitterConsumerSecret$$
+  GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
+
+Crawler:
+  FeedsToCrawl:
+  - Key: Blog
+    Url: https://blog.xamarin.com/feed/
+    LoadSocialLinkCounters: false
+  GitHubEventsToCrawl:
+  - Key: xamarin-android
+    Repository: xamarin/xamarin-android
+  - Key: Xamarin.Forms
+    Repository: xamarin/Xamarin.Forms
+  - Key: xamarin-macios
+    Repository: xamarin/xamarin-macios
+  TwitterTimelinesToCrawl:
+  - Key: Twitter
+    Handle: xamarinhq
+    IncludeRetweets: false
+
+Drop:
+  GitHubDrops:
+  - Owner: "Code-Inside"
+    Repo: "KnowYourStack"
+    Branch: "master"
+    FilePath: "_data/Xamarin.json"
