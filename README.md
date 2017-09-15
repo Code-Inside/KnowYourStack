@@ -1,10 +1,8 @@
-Hub
+KnowYourStack
 ===
 
-Hub for all CodeInside.eu related Stuff
+KownYourStack hosts and produces "Stack"-Dashboards. It uses the [Sloader Crawler](https://github.com/Code-Inside/Sloader) to read "common" community data (e.g. blogs, github data etc.) and stores them here. 
 
-Azure Website:
-https://codeinside-hub-web.azurewebsites.net/
+Then GitHub Pages picks up the data and serves as a simple HTML page.
 
-Build Status:
-[![Build status](https://ci.appveyor.com/api/projects/status/sg9k8xsu0saey9ua/branch/master)](https://ci.appveyor.com/project/robertmuehsig/hub/branch/master)
+__If you want to contribute your own tech stack, just follow the PR guide! Thanks!__
