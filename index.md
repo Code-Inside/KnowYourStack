@@ -13,6 +13,12 @@ title: All KnowYourStack Pages
                 <a href="{{page.url}}" class="list-group-item">{{page.title}}</a> 
       {% endfor %}
       </div>
+      
+      <div class="btn-group btn-block ">
+      <a href="{{ site.github_repo_url }}issues/new" class="btn btn-primary">
+        <i class="fa fa-fork" aria-hidden="true"></i> Add your own stack
+      </a>
+      </div>
     </div>
     </div>
 
