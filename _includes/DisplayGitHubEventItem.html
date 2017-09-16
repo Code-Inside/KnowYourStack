@@ -3,7 +3,8 @@
 	
 	{% assign icon = '' %}
 	{% assign color = '#959da5' %}
-	
+	{% assign text = '' %}
+
 	{% if include.eventItem.Type == "PushEvent" %}
 		{% assign icon = 'fa-cloud-upload' %}
 	{% endif %}
@@ -11,10 +12,13 @@
 		{% assign icon = 'fa-code-fork' %}
 		{% if include.eventItem.RelatedAction == "opened" %}
 			{% assign color = '#6cc644' %}
+			{% assign text = 'Open' %}
 		{% elsif include.eventItem.RelatedAction == "closed" %}
 			{% assign color = '#cb2431' %}
+			{% assign text = 'Closed' %}
 		{% elsif include.eventItem.RelatedAction == "merged" %}
 			{% assign color = '#6f42c1' %}
+			{% assign text = 'Merged' %}
 		{% else %}
 			{% assign color = '#959da5' %}
 		{% endif %}
@@ -26,8 +30,10 @@
 		{% assign icon = 'fa-sticky-note-o' %}
 		{% if include.eventItem.RelatedAction == "opened" %}
 			{% assign color = '#6cc644' %}
+			{% assign text = 'Open' %}
 		{% else %}
 			{% assign color = '#cb2431' %}
+			{% assign text = 'Closed' %}
 		{% endif %}
 	{% endif %}
 	{% if include.eventItem.Type == "IssueCommentEvent" %}
@@ -51,7 +57,7 @@
 		{% assign icon = 'fa-code-fork' %}
 	{% endif %}
 	
-	<span class="badge" style="background-color: {{color}}; color: white; width: 32px"><i class="fa {{icon}}" aria-hidden="true"></i></span>	
+	<span class="label pull-right" style="background-color: {{color}}; color: white;"><i class="fa {{icon}}" aria-hidden="true"></i> {{text}}</span>	
 					
     <p class="list-group-item-text">
 		{% include DisplayHotIcon.html date=include.eventItem.CreatedAt %}
