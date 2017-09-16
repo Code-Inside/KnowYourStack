@@ -14,7 +14,7 @@ permalink: "aspnetcore/feed/"
         <ttl>1800</ttl>
 
         <item>
-                <title>{{ page.title | xml_escape  }} @ {{ site.date | date_to_string }}</title>
+                <title>{{ page.title | xml_escape  }} @ {{ site.time | date_to_string }}</title>
                 <description><![CDATA[
                     <h1>ASP.NET Blog &amp; Tweets</h1>
                     <h2>.NET Web Development and Tools Blog</h2>
