@@ -1,0 +1,9 @@
+{% assign today = site.time | date: '%s' %}
+{% assign item_date = include.date | date: '%s' %}
+{% assign dateDiffInDays = today | minus: item_date | divided_by: 86400 %}
+{% if dateDiffInDays < 2 %}
+true
+{% else %}
+false
+{% endif %}
+

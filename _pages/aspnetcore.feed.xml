@@ -1,15 +1,14 @@
 ---
-title : KnowYourStack ASP.NET Core Feed
+title : ASP.NET Core Feed
 permalink: "aspnetcore/feed/"
 ---
 
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>{{ site.title }}</title>
+        <title>{{ site.title }}: {{ page.title }}</title>
         <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{ site.production_url }}{{ site.rss_path }}</link>
-        <link>{{ site.production_url }}</link>
+        <link>{{ page.permalink }}</link>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <ttl>1800</ttl>
@@ -21,59 +20,43 @@ permalink: "aspnetcore/feed/"
                     <h2>.NET Web Development and Tools Blog</h2>
 				
 				    {% for feedItem in site.data.AspNetCore.Data.Blog.FeedItems limit: 5 %}
-                            <p>{{ feedItem.Title }}
-                            <p>(Published on {{ feedItem.PublishedOn | date_to_long_string }})</p>
-                            <a href="{{ feedItem.Href }}">Read more</a>
+                         {% include DisplayFeedItemFeed.html eventItem=feedItem %}
 				    {% endfor %}
 
                     <h1>GitHub</h1>
                     <h2>aspnet/Announcements</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Announcements.Events limit: 10 %}
-                            <p>{{ eventItem.RelatedDescription | strip_html }}</p>
-                            <p>on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}</p>
-                            <a href="{{ eventItem.RelatedUrl }}">Read more</a>
+				    {% for eventItem in site.data.AspNetCore.Data.Announcements.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
                
                     <h2>aspnet/Home</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Home.Events limit: 10 %}
-                            <p>{{ eventItem.RelatedDescription | strip_html }}</p>
-                            <p>on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}</p>
-                            <a href="{{ eventItem.RelatedUrl }}">Read more</a>
+				    {% for eventItem in site.data.AspNetCore.Data.Home.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Mvc</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Mvc.Events limit: 10 %}
-                            <p>{{ eventItem.RelatedDescription | strip_html }}</p>
-                            <p>on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}</p>
-                            <a href="{{ eventItem.RelatedUrl }}">Read more</a>
+				    {% for eventItem in site.data.AspNetCore.Data.Mvc.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Razor</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Razor.Events limit: 10 %}
-                            <p>{{ eventItem.RelatedDescription | strip_html }}</p>
-                            <p>on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}</p>
-                            <a href="{{ eventItem.RelatedUrl }}">Read more</a>
+				    {% for eventItem in site.data.AspNetCore.Data.Razor.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
 
                     <h2>aspnet/SignalR</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.SignalR.Events limit: 10 %}
-                            <p>{{ eventItem.RelatedDescription | strip_html }}</p>
-                            <p>on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}</p>
-                            <a href="{{ eventItem.RelatedUrl }}">Read more</a>
+				    {% for eventItem in site.data.AspNetCore.Data.SignalR.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Identity</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Identity.Events limit: 10 %}
-                            <p>{{ eventItem.RelatedDescription | strip_html }}</p>
-                            <p>on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}</p>
-                            <a href="{{ eventItem.RelatedUrl }}">Read more</a>
+				    {% for eventItem in site.data.AspNetCore.Data.Identity.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Kestrel</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Kestrel.Events limit: 10 %}
-                            <p>{{ eventItem.RelatedDescription | strip_html }}</p>
-                            <p>on {{ eventItem.CreatedAt | date_to_long_string }} by {{ eventItem.Actor }}</p>
-                            <a href="{{ eventItem.RelatedUrl }}">Read more</a>
+				    {% for eventItem in site.data.AspNetCore.Data.Kestrel.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
 
                 ]]></description>
