@@ -14,9 +14,9 @@ permalink: "aspnetcore/feed/"
         <ttl>1800</ttl>
 
         <item>
-                <title>{{ title | xml_escape  }}</title>
+                <title>{{ page.title | xml_escape  }}</title>
                 <description><![CDATA[
-                    <h1>ASP.NET Blog & Tweets</h1>
+                    <h1>ASP.NET Blog &amp; Tweets</h1>
                     <h2>.NET Web Development and Tools Blog</h2>
 				
 				    {% for feedItem in site.data.AspNetCore.Data.Blog.FeedItems limit: 5 %}
