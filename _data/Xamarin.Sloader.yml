@@ -9,11 +9,11 @@ Crawler:
     Url: https://blog.xamarin.com/feed/
     LoadSocialLinkCounters: false
   GitHubEventsToCrawl:
-  - Key: xamarin-android
+  - Key: Android
     Repository: xamarin/xamarin-android
-  - Key: Xamarin.Forms
+  - Key: Forms
     Repository: xamarin/Xamarin.Forms
-  - Key: xamarin-macios
+  - Key: Macios
     Repository: xamarin/xamarin-macios
   TwitterTimelinesToCrawl:
   - Key: Twitter
