@@ -1,17 +1,15 @@
-# Contribute your own favorite stack?
+# Your stack of choice is missing?
 
-If you want to contribute a new stack but use the following steps:
+All I need is this information:
 
-1. Create a new XXX.Sloader.yml file under ___data__. Take a look at the other existing Sloader.yml files or look at our __[Sloader Documentation](http://code-inside.github.io/Sloader/)__ how to configure this beast.
-2. Create a new XXX.md file under ___page__. We use a customized version of bootstrap 3 and have a couple of Jekyll helpers under _Includes. Take a look at one of the other .md files.
-3. Submit your PR
+* Stack Name
+* Official and/or popular related GitHub Repos
+* Official Blog or Twitter Handle
 
-'XXX' should be the name of the tech stack.
-
-# That sounds complex, any other way to contribute?
-
-If you don't want to do this, please let me know the tech stack you want to add and a couple of links, e.g. Blog, GitHub URL etc.
+Oh - and don't be shy.
 
 # Found a bug or a suggestion?
 
-Don't be shy - create a PR!
+Just let me know.
+
+Thank you!
