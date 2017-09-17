@@ -61,7 +61,7 @@ permalink: "aspnetcore/feed/"
 
                 ]]></description>
                 <link>https://www.KnowYourStack.com/aspnetcore/</link>
-                <guid>https://www.KnowYourStack.com/aspnetcore/{{ site.time | date_to_xmlschema }}</guid>
+                <guid>https://www.KnowYourStack.com/aspnetcore/{{ site.time | date: "%Y/%m/%d" }}</guid>
                 <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         </item>
 
