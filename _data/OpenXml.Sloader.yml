@@ -1,0 +1,18 @@
+Secrets:
+  TwitterConsumerKey: $$Sloader.SecretTwitterConsumerKey$$
+  TwitterConsumerSecret: $$Sloader.SecretTwitterConsumerSecret$$
+  GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
+
+Crawler:
+  GitHubEventsToCrawl:
+  - Key: Sdk
+    Repository: OfficeDev/Open-XML-SDK
+  - Key: PowerTools
+    Repository: Open-Xml-PowerTools
+
+Drop:
+  GitHubDrops:
+  - Owner: "Code-Inside"
+    Repo: "KnowYourStack"
+    Branch: "master"
+    FilePath: "_data/OpenXml.json"
