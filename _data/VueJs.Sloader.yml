@@ -1,0 +1,20 @@
+Secrets:
+  TwitterConsumerKey: $$Sloader.SecretTwitterConsumerKey$$
+  TwitterConsumerSecret: $$Sloader.SecretTwitterConsumerSecret$$
+  GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
+
+Crawler:
+  GitHubEventsToCrawl:
+  - Key: Vue
+    Repository: vuejs/vue
+  - Key: Router
+    Repository: vuejs/vue-router
+  - Key: Vuex
+    Repository: vuejs/vuex
+
+Drop:
+  GitHubDrops:
+  - Owner: "Code-Inside"
+    Repo: "KnowYourStack"
+    Branch: "master"
+    FilePath: "_data/VueJs.json"
