@@ -8,7 +8,7 @@ Crawler:
   - Key: Sdk
     Repository: OfficeDev/Open-XML-SDK
   - Key: PowerTools
-    Repository: Open-Xml-PowerTools
+    Repository: OfficeDev/Open-Xml-PowerTools
 
 Drop:
   GitHubDrops:
