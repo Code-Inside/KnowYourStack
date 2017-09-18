@@ -8,7 +8,7 @@ Crawler:
   - Key: Vue
     Repository: vuejs/vue
   - Key: Js
-    Repository: vuejs/vue 
+    Repository: vuejs/vue
   - Key: Router
     Repository: vuejs/vue-router
   - Key: Vuex
