@@ -9,7 +9,6 @@ Crawler:
     Repository: vuejs/vue
   - Key: Js
     Repository: vuejs/vue 
-    Events: "*"
   - Key: Router
     Repository: vuejs/vue-router
   - Key: Vuex
