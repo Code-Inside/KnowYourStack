@@ -7,8 +7,6 @@ Crawler:
   GitHubEventsToCrawl:
   - Key: Vue
     Repository: vuejs/vue
-  - Key: Js
-    Repository: vuejs/vue
   - Key: Router
     Repository: vuejs/vue-router
   - Key: Vuex
