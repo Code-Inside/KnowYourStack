@@ -1,0 +1,5 @@
+{% capture dateDiffInDays %}{% include DateCheck.html date=include.tweetItem.CreatedAt %}{% endcapture %}
+
+{% if dateDiffInDays contains "true" %}
+    <p><a href="https://twitter.com/{{ include.tweetItem.UserScreenname }}/status/{{ tweetItem.Id }}"></a>{{ include.tweetItem.Text | strip_html }}</a> <small>@{{ include.tweetItem.UserScreenname }} | Published on {{ include.tweetItem.CreatedAt | date_to_long_string }}</small></p>
+{% endif %}

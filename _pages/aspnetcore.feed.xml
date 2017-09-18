@@ -14,13 +14,16 @@ permalink: "aspnetcore/feed/"
         <ttl>1800</ttl>
 
         <item>
-                <title>{{ page.title | xml_escape  }} @ {{ site.time | date_to_string }}</title>
+                <title>{{ page.title | xml_escape  }} Daily</title>
                 <description><![CDATA[
                     <h1>ASP.NET Blog &amp; Tweets</h1>
-                    <h2>.NET Web Development and Tools Blog</h2>
 				
 				    {% for feedItem in site.data.AspNetCore.Data.Blog.FeedItems limit: 5 %}
                          {% include DisplayFeedItemFeed.html eventItem=feedItem %}
+				    {% endfor %}
+				
+				    {% for feedItem in site.data.AspNetCore.Data.Twitter.Tweets limit: 5 %}
+                         {% include DisplayTweetItemFeed.html tweetItem=tweetItem %}
 				    {% endfor %}
 
                     <h1>GitHub</h1>
