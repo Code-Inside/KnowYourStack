@@ -20,6 +20,7 @@ include: ['_pages']
 # so be sure to set them if your theme uses them.
 #
 title : KnowYourStack
+tagline: Your Hub for your Stack
 author :
   name : Code Inside Team
   email : contact@codeinside.eu
