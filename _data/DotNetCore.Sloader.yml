@@ -23,6 +23,8 @@ Crawler:
     Repository: dotnet/corefx
   - Key: Roslyn
     Repository: dotnet/roslyn
+  - Key: CoreRT
+    Repository: dotnet/corert
   TwitterTimelinesToCrawl:
   - Key: Twitter
     Handle: dotnet
