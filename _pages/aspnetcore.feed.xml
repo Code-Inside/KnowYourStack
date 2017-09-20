@@ -9,7 +9,7 @@ permalink: "aspnetcore/feed/"
 <channel>
         <title>{{ site.title }}: {{ page.title }}</title>
         <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{BASE_PATH}}/{{ page.permalink }}</link>
+        <link>{{ site.production_url }}/{{ page.permalink }}</link>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <ttl>1800</ttl>
@@ -64,8 +64,8 @@ permalink: "aspnetcore/feed/"
 				    {% endfor %}
 
                 ]]></description>
-                <link>{{BASE_PATH}}/{{stack}}/</link>
-                <guid>{{BASE_PATH}}/{{stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
+                <link>{{ site.production_url }}/{{page.stack}}/</link>
+                <guid>{{ site.production_url }}/{{page.stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
                 <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         </item>
 
