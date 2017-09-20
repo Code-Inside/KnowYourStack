@@ -1,5 +1,6 @@
 ---
-title : ASP.NET Core Feed
+title : ASP.NET Core Daily Summary
+stack: "aspnetcore"
 permalink: "aspnetcore/feed/"
 ---
 
@@ -8,7 +9,7 @@ permalink: "aspnetcore/feed/"
 <channel>
         <title>{{ site.title }}: {{ page.title }}</title>
         <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{ page.permalink }}</link>
+        <link>{{BASE_PATH}}/{{ page.permalink }}</link>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <ttl>1800</ttl>
@@ -63,8 +64,8 @@ permalink: "aspnetcore/feed/"
 				    {% endfor %}
 
                 ]]></description>
-                <link>https://www.KnowYourStack.com/aspnetcore/</link>
-                <guid>https://www.KnowYourStack.com/aspnetcore/{{ site.time | date: "%Y/%m/%d" }}</guid>
+                <link>{{BASE_PATH}}/{{stack}}/</link>
+                <guid>{{BASE_PATH}}/{{stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
                 <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         </item>
 
