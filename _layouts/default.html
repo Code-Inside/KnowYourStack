@@ -45,7 +45,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     {% if page.feed %}
-    <link rel="alternate" type="application/rss+xml" href="{{BASE_PATH}}/{{ page.permalink }}/{{ page.feed }}" />
+    <link rel="alternate" type="application/rss+xml" href="{{site.production_url}}/{{ page.permalink }}{{ page.feed }}" />
     {% endif %}
     
     <!--[if lt IE 9]>
