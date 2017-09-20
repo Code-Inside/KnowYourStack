@@ -28,6 +28,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{site.author.twitter}}">
 
+
+    
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{site.production_url}}{{ page.url }}" /> {% if page.description %}
@@ -39,12 +41,19 @@
 
     <link href="{{BASE_PATH}}/assets/themes/bootstrap/resources/bootstrap/css/theme.min.css" rel="stylesheet">
 
+    
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    {% if page.feed %}
+    <link rel="alternate" type="application/rss+xml" href="{{BASE_PATH}}/{{ page.permalink }}/{{ page.feed }}" />
+    {% endif %}
+    
     <!--[if lt IE 9]>
       <script src="{{BASE_PATH}}/assets/themes/bootstrap/resources/bootstrap/js/Respond.min.js"></script>
     <![endif]-->
 
+    
+    
     <style>
         img {
             display: block;
