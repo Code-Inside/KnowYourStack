@@ -21,6 +21,10 @@ Crawler:
     Repository: aspnet/KestrelHttpServer
   - Key: Razor
     Repository: aspnet/Razor
+  - Key: Templates
+    Repository: aspnet/Templates
+  - Key: Tooling
+    Repository: aspnet/Tooling
   - Key: Announcements
     Repository: aspnet/Announcements
   TwitterTimelinesToCrawl:
