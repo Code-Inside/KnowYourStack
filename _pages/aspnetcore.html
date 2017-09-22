@@ -82,6 +82,8 @@ feed: "feed"
 		<li><a data-toggle="tab" href="#SignalR">SignalR</a></li>
 		<li><a data-toggle="tab" href="#Identity">Identity</a></li>
 		<li><a data-toggle="tab" href="#Kestrel">Kestrel</a></li>
+		<li><a data-toggle="tab" href="#Templates">Templates</a></li>
+		<li><a data-toggle="tab" href="#Tooling">Tooling</a></li>
 	</ul>
 	
 	<div class="tab-content">
@@ -132,11 +134,33 @@ feed: "feed"
 		</div>
 		<div id="Kestrel" class="tab-pane fade in">
 			<div class="list-group">
-                <a href="https://github.com/aspnet/KestrelHttpServer" class="list-group-item active">
-                    <h4 class="list-group-item-heading">aspnet/KestrelHttpServer</h4>
-                </a>
+                		<a href="https://github.com/aspnet/KestrelHttpServer" class="list-group-item active">
+                    			<h4 class="list-group-item-heading">aspnet/KestrelHttpServer</h4>
+                		</a>
 				
 				{% for eventItem in site.data.AspNetCore.Data.Kestrel.Events %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+		</div>
+		<div id="Templates" class="tab-pane fade in">
+			<div class="list-group">
+                		<a href="https://github.com/aspnet/Templates" class="list-group-item active">
+                    			<h4 class="list-group-item-heading">aspnet/Templates</h4>
+                		</a>
+				
+				{% for eventItem in site.data.AspNetCore.Data.Templates.Events %}
+					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
+				{% endfor %}
+			</div>
+		</div>
+		<div id="Tooling" class="tab-pane fade in">
+			<div class="list-group">
+                		<a href="https://github.com/aspnet/Tooling" class="list-group-item active">
+                    			<h4 class="list-group-item-heading">aspnet/Tooling</h4>
+                		</a>
+				
+				{% for eventItem in site.data.AspNetCore.Data.Tooling.Events %}
 					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
 				{% endfor %}
 			</div>
