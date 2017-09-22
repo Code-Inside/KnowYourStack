@@ -63,6 +63,16 @@ permalink: "aspnetcore/feed/"
                         {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 				    {% endfor %}
 
+                    <h2>aspnet/Templates</h2>
+				    {% for eventItem in site.data.AspNetCore.Data.Templates.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% endfor %}
+
+                    <h2>aspnet/Tooling</h2>
+				    {% for eventItem in site.data.AspNetCore.Data.Tooling.Events %}
+                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% endfor %}
+
                 ]]></description>
                 <link>{{ site.production_url }}/{{page.stack}}/</link>
                 <guid>{{ site.production_url }}/{{page.stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
