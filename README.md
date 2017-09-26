@@ -1,4 +1,4 @@
-KnowYourStack
+KnowYourStack [![Build Status](https://travis-ci.org/Code-Inside/KnowYourStack.svg?branch=master)](https://travis-ci.org/Code-Inside/KnowYourStack)
 ===
 
 KownYourStack hosts and produces "Stack"-Dashboards. It uses the [Sloader Crawler](https://github.com/Code-Inside/Sloader) to read "common" community data (e.g. blogs, github data etc.) and stores them here. 
