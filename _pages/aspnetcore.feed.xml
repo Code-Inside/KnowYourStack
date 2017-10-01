@@ -15,7 +15,7 @@ permalink: "aspnetcore/feed/"
         <ttl>1800</ttl>
 
         <item>
-                <title>{{ page.title | xml_escape  }} Daily</title>
+                <title>{{ page.title | xml_escape  }}</title>
                 <description><![CDATA[
                     <h1>ASP.NET Blog &amp; Tweets</h1>
 				
