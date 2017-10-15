@@ -75,7 +75,7 @@ permalink: "aspnetcore/feed/"
 
                 ]]></description>
                 <link>{{ site.production_url }}/{{page.stack}}/</link>
-                <guid>{{ site.production_url }}/{{page.stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
+                <guid isPermaLink="false">{{ site.production_url }}/{{page.stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
                 <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         </item>
 
