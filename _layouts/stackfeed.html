@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>{{ site.title }}: {{ page.title }}</title>
+        <description>{{ site.title }} - {{ site.author.name }}</description>
+        <link>{{ site.production_url }}/{{ page.permalink }}</link>
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+        <ttl>1800</ttl>
+
+        <item>
+                <title>{{ page.title | xml_escape  }}</title>
+                <description>
+                <![CDATA[
+                {{content}}
+                ]]>
+                </description>
+                <link>{{ site.production_url }}/{{page.stack}}/</link>
+                <guid isPermaLink="false">{{ site.production_url }}/{{page.stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
+                <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+        </item>
+
+</channel>
+</rss>
