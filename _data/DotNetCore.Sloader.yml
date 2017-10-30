@@ -25,6 +25,8 @@ Crawler:
     Repository: dotnet/roslyn
   - Key: CoreRT
     Repository: dotnet/corert
+  - Key: SDK
+    Repository: dotnet/sdk
   TwitterTimelinesToCrawl:
   - Key: Twitter
     Handle: dotnet
