@@ -8,6 +8,7 @@ Crawler:
   - Key: Blog
     Url: https://blog.nuget.org/feeds/atom.xml
     LoadSocialLinkCounters: false
+    SummaryTruncateAt: 200
   GitHubEventsToCrawl:
   - Key: Gallery
     Repository: NuGet/NuGetGallery

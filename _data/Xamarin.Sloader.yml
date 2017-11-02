@@ -8,6 +8,7 @@ Crawler:
   - Key: Blog
     Url: https://blog.xamarin.com/feed/
     LoadSocialLinkCounters: false
+    SummaryTruncateAt: 200
   GitHubEventsToCrawl:
   - Key: Android
     Repository: xamarin/xamarin-android

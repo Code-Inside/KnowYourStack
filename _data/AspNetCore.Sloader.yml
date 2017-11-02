@@ -8,6 +8,7 @@ Crawler:
   - Key: Blog
     Url: https://blogs.msdn.microsoft.com/webdev/feed/
     LoadSocialLinkCounters: false
+    SummaryTruncateAt: 200
   GitHubEventsToCrawl:
   - Key: Home
     Repository: aspnet/Home
