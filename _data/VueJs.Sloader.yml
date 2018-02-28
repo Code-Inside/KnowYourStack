@@ -15,6 +15,7 @@ Crawler:
   - Key: VueIssues
     Repository: vuejs/vue
     FilterByState: all
+
 Drop:
   GitHubDrops:
   - Owner: "Code-Inside"
