@@ -12,10 +12,16 @@ Crawler:
   - Key: Vuex
     Repository: vuejs/vuex
   GitHubIssuesToCrawl:
-  - Key: VueIssues
+  - Key: Vue-Issues
     Repository: vuejs/vue
     FilterByState: all
-
+  - Key: Router-Issues
+    Repository: vuejs/vue-router
+    FilterByState: all
+  - Key: Vuex-Issues
+    Repository: vuejs/vuex
+    FilterByState: all
+    
 Drop:
   GitHubDrops:
   - Owner: "Code-Inside"
