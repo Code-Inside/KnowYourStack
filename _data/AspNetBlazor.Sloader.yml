@@ -7,7 +7,8 @@ Crawler:
   GitHubIssuesToCrawl:
   - Repository: aspnet/blazor
     Key: Issues
-    
+    FilterByState: all
+
 Drop:
   GitHubDrops:
   - Owner: "Code-Inside"
