@@ -1,0 +1,16 @@
+<a href="{{ include.issueItem.Url }}" class="list-group-item">
+    <h4 class="list-group-item-heading">{{ include.issueItem.Title | strip_html }}</h4>
+	
+	{% assign icon = '' %}
+	{% assign color = '#959da5' %}
+	{% assign text = '' %}
+	
+	<span class="label pull-right" style="background-color: {{color}}; color: white;"><i class="fa {{icon}}" aria-hidden="true"></i> Issue</span>	
+					
+    <p class="list-group-item-text">
+		{% include DisplayHotIcon.html date=include.issueItem.CreatedAt %}
+	      {{ include.eventItem.RelatedDescription | strip_html }}
+        <br/>
+        on {{ include.issueItem.CreatedAt | date_to_long_string }} by {{ include.issueItem.Actor }}
+    </p>
+</a>
