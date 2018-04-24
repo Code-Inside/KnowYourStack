@@ -6,7 +6,7 @@ Secrets:
 Crawler:
   GitHubIssuesToCrawl:
   - Repository: aspnet/blazor
-    Key: Issues
+    Key: GitHubIssues
     FilterByState: all
 
 Drop:
