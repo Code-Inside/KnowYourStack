@@ -18,7 +18,7 @@ permalink: "blazor/"
                     <h4 class="list-group-item-heading">aspnet/blazor</h4>
                 </a>
 				
-				{% for issueItem in site.data.AspNetBlazor.Data.Issues limit: 30 %}
+				{% for issueItem in site.data.AspNetBlazor.Data.Issues.Issues limit: 30 %}
 					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
 				{% endfor %}
 			</div>
