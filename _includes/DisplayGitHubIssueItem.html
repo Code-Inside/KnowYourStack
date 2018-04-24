@@ -9,7 +9,7 @@
 					
     <p class="list-group-item-text">
 		{% include DisplayHotIcon.html date=include.issueItem.CreatedAt %}
-	      {{ include.eventItem.RelatedDescription | strip_html }}
+	        {{ include.issueItem.RelatedDescription | strip_html }}
         <br/>
         on {{ include.issueItem.CreatedAt | date_to_long_string }} by {{ include.issueItem.Actor }}
     </p>
