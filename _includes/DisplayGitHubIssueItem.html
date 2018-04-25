@@ -7,19 +7,19 @@
 	
 	{% if include.issueItem.IsPullRequest == "true" %}
 	        {% assign icon = 'fa-code-fork' %}
-                {% if include.issueItem.RelatedAction == "open" %}
+                {% if include.issueItem.State == "open" %}
 			{% assign color = '#6cc644' %}
 			{% assign text = 'PR opened' %}
-		{% elsif include.eventItem.RelatedAction == "closed" %}
+		{% elsif include.eventItem.State == "closed" %}
 			{% assign color = '#cb2431' %}
 			{% assign text = 'PR merged or closed' %}
 		{% endif %}
 	{% else %}
 	        {% assign icon = 'fa-plus' %}
-                {% if include.issueItem.RelatedAction == "open" %}
+                {% if include.issueItem.State == "open" %}
 			{% assign color = '#6cc644' %}
 			{% assign text = 'Issue opened' %}
-		{% elsif include.issueItem.RelatedAction == "closed" %}
+		{% elsif include.issueItem.State == "closed" %}
 			{% assign color = '#cb2431' %}
 			{% assign text = 'Issue closed' %}
 		{% endif %}
