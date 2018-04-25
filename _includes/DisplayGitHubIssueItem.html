@@ -14,7 +14,7 @@
 			{% assign color = '#cb2431' %}
 			{% assign text = 'PR merged or closed' %}
 		{% endif %}
-	{% elseif %}
+	{% else %}
 	        {% assign icon = 'fa-plus' %}
                 {% if include.eventItem.RelatedAction == "open" %}
 			{% assign color = '#6cc644' %}
