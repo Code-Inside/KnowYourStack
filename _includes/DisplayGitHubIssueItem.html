@@ -15,11 +15,13 @@
 			{% assign text = 'PR merged or closed' %}
 		{% endif %}
 	{% else %}
-	        {% assign icon = 'fa-plus' %}
+	        
                 {% if include.issueItem.State == "open" %}
+	                {% assign icon = 'fa-plus' %}
 			{% assign color = '#6cc644' %}
 			{% assign text = 'Issue opened' %}
 		{% elsif include.issueItem.State == "closed" %}
+	                {% assign icon = 'fa-minus' %}
 			{% assign color = '#cb2431' %}
 			{% assign text = 'Issue closed' %}
 		{% endif %}
