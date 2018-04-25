@@ -7,7 +7,7 @@
 	
 	{% if include.issueItem.IsPullRequest == "true" %}
 	        {% assign icon = 'fa-code-fork' %}
-                {% if include.eventItem.RelatedAction == "open" %}
+                {% if include.issueItem.RelatedAction == "open" %}
 			{% assign color = '#6cc644' %}
 			{% assign text = 'PR opened' %}
 		{% elsif include.eventItem.RelatedAction == "closed" %}
@@ -16,10 +16,10 @@
 		{% endif %}
 	{% else %}
 	        {% assign icon = 'fa-plus' %}
-                {% if include.eventItem.RelatedAction == "open" %}
+                {% if include.issueItem.RelatedAction == "open" %}
 			{% assign color = '#6cc644' %}
 			{% assign text = 'Issue opened' %}
-		{% elsif include.eventItem.RelatedAction == "closed" %}
+		{% elsif include.issueItem.RelatedAction == "closed" %}
 			{% assign color = '#cb2431' %}
 			{% assign text = 'Issue closed' %}
 		{% endif %}
