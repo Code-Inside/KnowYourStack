@@ -10,7 +10,7 @@
                 {% if include.issueItem.State == "open" %}
 			{% assign color = '#6cc644' %}
 			{% assign text = 'PR opened' %}
-		{% elsif include.eventItem.State == "closed" %}
+		{% elsif include.issueItem.State == "closed" %}
 			{% assign color = '#cb2431' %}
 			{% assign text = 'PR merged or closed' %}
 		{% endif %}
