@@ -9,19 +9,19 @@
 	        {% assign icon = 'fa-code-fork' %}
                 {% if include.issueItem.State == "open" %}
 			{% assign color = '#6cc644' %}
-			{% assign text = 'open' %}
+			{% assign text = 'Open' %}
 		{% elsif include.issueItem.State == "closed" %}
 			{% assign color = '#6f42c1' %}
-			{% assign text = 'merged or closed' %}
+			{% assign text = 'Merged or Closed' %}
 		{% endif %}
 	{% else %}    
 		{% assign icon = 'fa-sticky-note-o' %}
                 {% if include.issueItem.State == "open" %}
 			{% assign color = '#6cc644' %}
-			{% assign text = 'open' %}
+			{% assign text = 'Open' %}
 		{% elsif include.issueItem.State == "closed" %}
 			{% assign color = '#cb2431' %}
-			{% assign text = 'closed' %}
+			{% assign text = 'Closed' %}
 		{% endif %}
 	{% endif %}
 	
