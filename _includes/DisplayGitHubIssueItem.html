@@ -5,7 +5,7 @@
 	{% assign color = '#959da5' %}
 	{% assign text = '' %}
 	
-	{% if include.issueItem.IsPullRequest == "true" %}
+	{% if include.issueItem.IsPullRequest == true %}
 	        {% assign icon = 'fa-code-fork' %}
                 {% if include.issueItem.State == "open" %}
 			{% assign color = '#6cc644' %}
@@ -14,8 +14,7 @@
 			{% assign color = '#cb2431' %}
 			{% assign text = 'PR merged or closed' %}
 		{% endif %}
-	{% else %}
-	        
+	{% else %}    
                 {% if include.issueItem.State == "open" %}
 	                {% assign icon = 'fa-plus' %}
 			{% assign color = '#6cc644' %}
