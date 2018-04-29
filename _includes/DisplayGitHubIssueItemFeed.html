@@ -6,13 +6,13 @@
 	{% assign icon = '' %}
 	
 	{% if include.issueItem.IsPullRequest == true %}
-        {% if include.issueItem.State == "open" %}
+        	{% if include.issueItem.State == "open" %}
 			{% assign icon = '📗' %}
-        {% elsif include.issueItem.State == "closed" %}
+        	{% elsif include.issueItem.State == "closed" %}
 			{% assign icon = '📑' %}
-	    {% endif %}
+	    	{% endif %}
 	{% else %}    
-        {% if include.issueItem.State == "open" %}
+        	{% if include.issueItem.State == "open" %}
 		    {% assign icon = '📗' %}
 		{% elsif include.issueItem.State == "closed" %}
 			{% assign icon = '📕' %}
