@@ -1,0 +1,14 @@
+---
+title : Blazor Daily Summary
+stack: "blazor"
+description: Everything around the Blazor
+permalink: "blazor/feed/"
+layout: "stackfeed"
+---
+
+<h1>GitHub</h1>
+
+{% for issueItem in site.data.AspNetBlazor.Data.GitHubIssues.Issues limit: 30 %}
+     {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
+{% endfor %}
+ 
