@@ -1,10 +1,12 @@
 --- 
 layout: page 
-title: All KnowYourStack Pages
+title: KnowYourStack
 --- 
+
 <section>
     <div class="row">
     <div class="col-md-12">
+      <h2>Watched Stacks:</h2>
       <div class="list-group">
       {% assign stackPages = site.pages | where: "type", "stack" %} 
       {% for page in stackPages %}
@@ -17,6 +19,16 @@ title: All KnowYourStack Pages
         <i class="fa fa-plus" aria-hidden="true"></i> Add your own stack
       </a>
       </div>
+    </div>
+    </div>
+
+</section>
+<section>
+    <div class="row">
+    <div class="col-md-12">
+        <h2>About</h2>
+        <p>The goal of this site is to get a glimpse of the daily community activity on each stack. Currently it is just a "today"-snapshot of each acitivy, e.g. a new issue on GitHub powered by a small OSS project called <a href="https://code-inside.github.io/Sloader/">Sloader</a>.</p>
+        <p>Don't be shy and propose your favorite stack!</p>
     </div>
     </div>
 
