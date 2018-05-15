@@ -1,0 +1,29 @@
+---
+title : "Vue.js Daily Summary"
+stack: "vuejs"
+description: "Everything around Vue.js"
+permalink: "vuejs/feed/"
+layout: "stackfeed"
+---
+
+<h1>GitHub: vuejs/vue</h1>
+
+{% for issueItem in site.data.VueJs.Data.Vue-Issues.Issues limit: 30 %}
+					{% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
+{% endfor %}
+
+
+<h1>GitHub: vuejs/vue-router</h1>
+
+{% for issueItem in site.data.VueJs.Data.Router-Issues.Issues limit: 30 %}
+					{% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
+{% endfor %}
+        
+        
+
+<h1>GitHub: vuejs/vuex</h1>
+
+{% for issueItem in site.data.VueJs.Data.Vuex-Issues.Issues limit: 30 %}
+					{% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
+{% endfor %}
+        
