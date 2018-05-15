@@ -4,13 +4,6 @@ Secrets:
   GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
 
 Crawler:
-  GitHubEventsToCrawl:
-  - Key: Vue
-    Repository: vuejs/vue
-  - Key: Router
-    Repository: vuejs/vue-router
-  - Key: Vuex
-    Repository: vuejs/vuex
   GitHubIssuesToCrawl:
   - Key: Vue-Issues
     Repository: vuejs/vue
