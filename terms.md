@@ -8,7 +8,7 @@ group: navigation
 
 ## General
 
-The information on the blog is not guaranteed to be accurate. It's just a private side project. We do our best to write content that matters - at least for us.
+The information on the site is not guaranteed to be accurate. It's just a private side project. We do our best to write content that matters - at least for us.
 
 
 ## Contact
@@ -49,14 +49,14 @@ Full legal disclaimer:
 
 <h2>Privacy Policy</h2>
 
-<p>We are very delighted that you have shown interest in our enterprise. Data protection is of a particularly high priority for the management of the Code Inside Blog. The use of the Internet pages of the Code Inside Blog is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject.</p>
+<p>We are very delighted that you have shown interest in our enterprise. Data protection is of a particularly high priority for the management of www.knowyourstack.com. The use of the Internet pages of www.knowyourstack.com is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject.</p>
 
-<p>The processing of personal data, such as the name, address, e-mail address, or telephone number of a data subject shall always be in line with the General Data Protection Regulation (GDPR), and in accordance with the country-specific data protection regulations applicable to the Code Inside Blog. By means of this data protection declaration, our enterprise would like to inform the general public of the nature, scope, and purpose of the personal data we collect, use and process. Furthermore, data subjects are informed, by means of this data protection declaration, of the rights to which they are entitled.</p>
+<p>The processing of personal data, such as the name, address, e-mail address, or telephone number of a data subject shall always be in line with the General Data Protection Regulation (GDPR), and in accordance with the country-specific data protection regulations applicable to www.knowyourstack.com. By means of this data protection declaration, our enterprise would like to inform the general public of the nature, scope, and purpose of the personal data we collect, use and process. Furthermore, data subjects are informed, by means of this data protection declaration, of the rights to which they are entitled.</p>
 
-<p>As the controller, the Code Inside Blog has implemented numerous technical and organizational measures to ensure the most complete protection of personal data processed through this website. However, Internet-based data transmissions may in principle have security gaps, so absolute protection may not be guaranteed. For this reason, every data subject is free to transfer personal data to us via alternative means, e.g. by telephone. </p>
+<p>As the controller, www.knowyourstack.com has implemented numerous technical and organizational measures to ensure the most complete protection of personal data processed through this website. However, Internet-based data transmissions may in principle have security gaps, so absolute protection may not be guaranteed. For this reason, every data subject is free to transfer personal data to us via alternative means, e.g. by telephone. </p>
 
 <h4>1. Definitions</h4>
-<p>The data protection declaration of the Code Inside Blog is based on the terms used by the European legislator for the adoption of the General Data Protection Regulation (GDPR). Our data protection declaration should be legible and understandable for the general public, as well as our customers and business partners. To ensure this, we would like to first explain the terminology used.</p>
+<p>The data protection declaration of www.knowyourstack.com is based on the terms used by the European legislator for the adoption of the General Data Protection Regulation (GDPR). Our data protection declaration should be legible and understandable for the general public, as well as our customers and business partners. To ensure this, we would like to first explain the terminology used.</p>
 
 <p>In this data protection declaration, we use, inter alia, the following terms:</p>
 
@@ -109,11 +109,11 @@ Full legal disclaimer:
 <p>Email: robert.muehsig(at)codeinside(dot)eu</p>
 
 <h4>3. Cookies</h4>
-<p>The Internet pages of the Code Inside Blog use cookies. Cookies are text files that are stored in a computer system via an Internet browser.</p>
+<p>The Internet pages of www.knowyourstack.com use cookies. Cookies are text files that are stored in a computer system via an Internet browser.</p>
 
 <p>Many Internet sites and servers use cookies. Many cookies contain a so-called cookie ID. A cookie ID is a unique identifier of the cookie. It consists of a character string through which Internet pages and servers can be assigned to the specific Internet browser in which the cookie was stored. This allows visited Internet sites and servers to differentiate the individual browser of the dats subject from other Internet browsers that contain other cookies. A specific Internet browser can be recognized and identified using the unique cookie ID.</p>
 
-<p>Through the use of cookies, the Code Inside Blog can provide the users of this website with more user-friendly services that would not be possible without the cookie setting.</p>
+<p>Through the use of cookies, www.knowyourstack.com can provide the users of this website with more user-friendly services that would not be possible without the cookie setting.</p>
 
 <p>By means of a cookie, the information and offers on our website can be optimized with the user in mind. Cookies allow us, as previously mentioned, to recognize our website users. The purpose of this recognition is to make it easier for users to utilize our website. The website user that uses cookies, e.g. does not have to enter access data each time the website is accessed, because this is taken over by the website, and the cookie is thus stored on the user's computer system. Another example is the cookie of a shopping cart in an online shop. The online store remembers the articles that a customer has placed in the virtual shopping cart via a cookie.</p>
 
@@ -131,7 +131,7 @@ The Code Inside website doesn't collect general data or information itself, but 
 
 <p>Each of those websites might collects a series of general data and information when a data subject or automated system calls up the website. This general data and information are stored in the server log files. Collected may be (1) the browser types and versions used, (2) the operating system used by the accessing system, (3) the website from which an accessing system reaches our website (so-called referrers), (4) the sub-websites, (5) the date and time of access to the Internet site, (6) an Internet protocol address (IP address), (7) the Internet service provider of the accessing system, and (8) any other similar data and information that may be used in the event of attacks on our information technology systems.</p>
 
-<p>When using these general data and information, the Code Inside Blog does not draw any conclusions about the data subject. Rather, this information is needed to (1) deliver the content of our website correctly, (2) optimize the content of our website as well as its advertisement, (3) ensure the long-term viability of our information technology systems and website technology, and (4) provide law enforcement authorities with the information necessary for criminal prosecution in case of a cyber-attack.</p>
+<p>When using these general data and information, www.knowyourstack.com does not draw any conclusions about the data subject. Rather, this information is needed to (1) deliver the content of our website correctly, (2) optimize the content of our website as well as its advertisement, (3) ensure the long-term viability of our information technology systems and website technology, and (4) provide law enforcement authorities with the information necessary for criminal prosecution in case of a cyber-attack.</p>
 
 <h4>5. Routine erasure and blocking of personal data</h4>
 <p>The data controller shall process and store the personal data of the data subject only for the period necessary to achieve the purpose of storage, or as far as this is granted by the European legislator or other legislators in laws or regulations to which the controller is subject to.</p>
@@ -178,7 +178,7 @@ The Code Inside website doesn't collect general data or information itself, but 
 <li>The personal data have been collected in relation to the offer of information society services referred to in Article 8(1) of the GDPR.</li>
 
 </ul>
-<p>If one of the aforementioned reasons applies, and a data subject wishes to request the erasure of personal data stored by the Code Inside Blog, he or she may at any time contact the controller. The site owner shall promptly ensure that the erasure request is complied with immediately.</p>
+<p>If one of the aforementioned reasons applies, and a data subject wishes to request the erasure of personal data stored by www.knowyourstack.com, he or she may at any time contact the controller. The site owner shall promptly ensure that the erasure request is complied with immediately.</p>
 
 <p>Where the controller has made personal data public and is obliged pursuant to Article 17(1) to erase the personal data, the controller, taking account of available technology and the cost of implementation, shall take reasonable steps, including technical measures, to inform other controllers processing the personal data that the data subject has requested erasure by such controllers of any links to, or copy or replication of, those personal data, as far as processing is not required. The site owner will arrange the necessary measures in individual cases.</p>
 </li>
@@ -192,7 +192,7 @@ The Code Inside website doesn't collect general data or information itself, but 
 <li>The data subject has objected to processing pursuant to Article 21(1) of the GDPR pending the verification whether the legitimate grounds of the controller override those of the data subject.</li>
 
 </ul>
-<p>If one of the aforementioned conditions is met, and a data subject wishes to request the restriction of the processing of personal data stored by the Code Inside Blog, he or she may at any time contact the site owner. The site owner will arrange the restriction of the processing. </p>
+<p>If one of the aforementioned conditions is met, and a data subject wishes to request the restriction of the processing of personal data stored by www.knowyourstack.com, he or she may at any time contact the site owner. The site owner will arrange the restriction of the processing. </p>
 </li>
 <li><h4>f) Right to data portability</h4>
 <p>Each data subject shall have the right granted by the European legislator, to receive the personal data concerning him or her, which was provided to a controller, in a structured, commonly used and machine-readable format. He or she shall have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, as long as the processing is based on consent pursuant to point (a) of Article 6(1) of the GDPR or point (a) of Article 9(2) of the GDPR, or on a contract pursuant to point (b) of Article 6(1) of the GDPR, and the processing is carried out by automated means, as long as the processing is not necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.</p>
@@ -206,18 +206,18 @@ The Code Inside website doesn't collect general data or information itself, but 
 <h4>g) Right to object</h4>
 <p>Each data subject shall have the right granted by the European legislator to object, on grounds relating to his or her particular situation, at any time, to processing of personal data concerning him or her, which is based on point (e) or (f) of Article 6(1) of the GDPR. This also applies to profiling based on these provisions.</p>
 
-<p>The Code Inside Blog shall no longer process the personal data in the event of the objection, unless we can demonstrate compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject, or for the establishment, exercise or defence of legal claims.</p>
+<p>www.knowyourstack.com shall no longer process the personal data in the event of the objection, unless we can demonstrate compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject, or for the establishment, exercise or defence of legal claims.</p>
 
-<p>If the Code Inside Blog processes personal data for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing. This applies to profiling to the extent that it is related to such direct marketing. If the data subject objects to the Code Inside Blog to the processing for direct marketing purposes, the Code Inside Blog will no longer process the personal data for these purposes.</p>
+<p>If www.knowyourstack.com processes personal data for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing. This applies to profiling to the extent that it is related to such direct marketing. If the data subject objects to www.knowyourstack.com to the processing for direct marketing purposes, www.knowyourstack.com will no longer process the personal data for these purposes.</p>
 
-<p>In addition, the data subject has the right, on grounds relating to his or her particular situation, to object to processing of personal data concerning him or her by the Code Inside Blog for scientific or historical research purposes, or for statistical purposes pursuant to Article 89(1) of the GDPR, unless the processing is necessary for the performance of a task carried out for reasons of public interest.</p>
+<p>In addition, the data subject has the right, on grounds relating to his or her particular situation, to object to processing of personal data concerning him or her by www.knowyourstack.com for scientific or historical research purposes, or for statistical purposes pursuant to Article 89(1) of the GDPR, unless the processing is necessary for the performance of a task carried out for reasons of public interest.</p>
 
 <p>In order to exercise the right to object, the data subject may directly contact the site owner. In addition, the data subject is free in the context of the use of information society services, and notwithstanding Directive 2002/58/EC, to use his or her right to object by automated means using technical specifications.</p>
 </li>
 <li><h4>h) Automated individual decision-making, including profiling</h4>
 <p>Each data subject shall have the right granted by the European legislator not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her, or similarly significantly affects him or her, as long as the decision (1) is not is necessary for entering into, or the performance of, a contract between the data subject and a data controller, or (2) is not authorised by Union or Member State law to which the controller is subject and which also lays down suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, or (3) is not based on the data subject's explicit consent.</p>
 
-<p>If the decision (1) is necessary for entering into, or the performance of, a contract between the data subject and a data controller, or (2) it is based on the data subject's explicit consent, the Code Inside Blog shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and contest the decision.</p>
+<p>If the decision (1) is necessary for entering into, or the performance of, a contract between the data subject and a data controller, or (2) it is based on the data subject's explicit consent, www.knowyourstack.com shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and contest the decision.</p>
 
 <p>If the data subject wishes to exercise the rights concerning automated individual decision-making, he or she may at any time directly contact the site owner.</p>
 
