@@ -106,7 +106,7 @@ Full legal disclaimer:
 <p>9545 Wängi</p>
 <p>Schweiz</p>
 <p>Website: www.codeinside.eu</p>
-<p>Email: robert.muehsig@codeinside.eu</p>
+<p>Email: robert.muehsig(at)codeinside(dot)eu</p>
 
 <h4>3. Cookies</h4>
 <p>The Internet pages of the Code Inside Blog use cookies. Cookies are text files that are stored in a computer system via an Internet browser.</p>
