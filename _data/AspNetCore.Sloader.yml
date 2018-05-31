@@ -9,6 +9,31 @@ Crawler:
     Url: https://blogs.msdn.microsoft.com/webdev/feed/
     LoadSocialLinkCounters: false
     SummaryTruncateAt: 200
+  GitHubIssuesToCrawl:
+  - Key: Home-Issues
+    Repository: aspnet/Home
+    FilterByState: all
+  - Key: SignalR-Issues
+    Repository: aspnet/SignalR
+    FilterByState: all
+  - Key: Identity-Issues
+    Repository: aspnet/Identity
+    FilterByState: all    
+  - Key: Kestrel-Issues
+    Repository: aspnet/KestrelHttpServer
+    FilterByState: all    
+  - Key: Razor-Issues
+    Repository: aspnet/Razor
+    FilterByState: all    
+  - Key: Templates-Issues
+    Repository: aspnet/Templates
+    FilterByState: all    
+  - Key: Tooling-Issues
+    Repository: aspnet/Tooling
+    FilterByState: all  
+  - Key: Announcements-Issues
+    Repository: aspnet/Announcements
+    FilterByState: all  
   GitHubEventsToCrawl:
   - Key: Home
     Repository: aspnet/Home
