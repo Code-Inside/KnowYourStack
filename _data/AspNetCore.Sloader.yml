@@ -33,24 +33,7 @@ Crawler:
     FilterByState: all  
   - Key: Announcements-Issues
     Repository: aspnet/Announcements
-    FilterByState: all  
-  GitHubEventsToCrawl:
-  - Key: Home
-    Repository: aspnet/Home
-  - Key: SignalR
-    Repository: aspnet/SignalR
-  - Key: Mvc
-    Repository: aspnet/Mvc
-  - Key: Identity
-    Repository: aspnet/Identity
-  - Key: Kestrel
-    Repository: aspnet/KestrelHttpServer
-  - Key: Razor
-    Repository: aspnet/Razor
-  - Key: Templates
-    Repository: aspnet/Templates
-  - Key: Tooling
-    Repository: aspnet/Tooling
+    FilterByState: all
   - Key: Announcements
     Repository: aspnet/Announcements
   TwitterTimelinesToCrawl:
