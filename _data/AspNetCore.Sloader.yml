@@ -13,6 +13,9 @@ Crawler:
   - Key: Home-Issues
     Repository: aspnet/Home
     FilterByState: all
+  - Key: Mvc-Issues
+    Repository: aspnet/Mvc
+    FilterByState: all
   - Key: SignalR-Issues
     Repository: aspnet/SignalR
     FilterByState: all
