@@ -29,48 +29,48 @@ permalink: "aspnetcore/feed/"
 
                     <h1>GitHub</h1>
                     <h2>aspnet/Announcements</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Announcements.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Announcements-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
                
                     <h2>aspnet/Home</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Home.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Home-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Mvc</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Mvc.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Mvc-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Razor</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Razor.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Razor-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                     <h2>aspnet/SignalR</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.SignalR.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.SignalR-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Identity</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Identity.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Identity-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Kestrel</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Kestrel.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Kestrel-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Templates</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Templates.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Templates-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                     <h2>aspnet/Tooling</h2>
-				    {% for eventItem in site.data.AspNetCore.Data.Tooling.Events %}
-                        {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
+				    {% for issueItem in site.data.AspNetCore.Data.Tooling-Issues.Issues %}
+                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
                 ]]></description>
