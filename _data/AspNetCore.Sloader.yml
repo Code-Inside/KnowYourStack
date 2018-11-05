@@ -37,8 +37,6 @@ Crawler:
   - Key: Announcements-Issues
     Repository: aspnet/Announcements
     FilterByState: all
-  - Key: Announcements
-    Repository: aspnet/Announcements
   TwitterTimelinesToCrawl:
   - Key: Twitter
     Handle: aspnet
