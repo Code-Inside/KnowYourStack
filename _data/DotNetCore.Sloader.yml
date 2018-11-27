@@ -28,6 +28,34 @@ Crawler:
     Repository: dotnet/corert
   - Key: SDK
     Repository: dotnet/sdk
+  GitHubIssuesToCrawl:
+  - Key: Home-Issues
+    Repository: dotnet/Home
+    FilterByState: all
+  - Key: CoreCLR-Issues
+    Repository: dotnet/coreclr
+    FilterByState: all
+  - Key: CLI-Issues
+    Repository: dotnet/cli
+    FilterByState: all
+  - Key: Standard-Issues
+    Repository: dotnet/standard
+    FilterByState: all    
+  - Key: CoreFx-Issues
+    Repository: dotnet/corefx
+    FilterByState: all    
+  - Key: Roslyn-Issues
+    Repository: dotnet/roslyn
+    FilterByState: all    
+  - Key: CoreRT-Issues
+    Repository: dotnet/corert
+    FilterByState: all    
+  - Key: SDK-Issues
+    Repository: dotnet/sdk
+    FilterByState: all  
+  - Key: Announcements-Issues
+    Repository: dotnet/announcements
+    FilterByState: all    
   TwitterTimelinesToCrawl:
   - Key: Twitter
     Handle: dotnet
