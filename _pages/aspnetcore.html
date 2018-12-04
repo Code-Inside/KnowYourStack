@@ -65,11 +65,11 @@ feed: "feed"
 		<div class="col-md-12">
 
             <div class="list-group">
-                <a href="https://github.com/aspnet/Home" class="list-group-item active">
-                    <h4 class="list-group-item-heading">aspnet/Home</h4>
+                <a href="https://github.com/aspnet/aspnetcore" class="list-group-item active">
+                    <h4 class="list-group-item-heading">aspnet/AspNetCore</h4>
                 </a>
 				
-				{% for issueItem in site.data.AspNetCore.Data.Home-Issues.Issues limit: 10 %}
+				{% for issueItem in site.data.AspNetCore.Data.AspNetCore-Issues.Issues limit: 10 %}
 					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
 				{% endfor %}
 			</div>
@@ -77,50 +77,12 @@ feed: "feed"
 	</div>
 	
 	<ul class="nav nav-tabs">
-		<li class="active"><a data-toggle="tab" href="#Mvc">Mvc</a></li>
-		<li><a data-toggle="tab" href="#Razor">Razor</a></li>
-		<li><a data-toggle="tab" href="#SignalR">SignalR</a></li>
-		<li><a data-toggle="tab" href="#Identity">Identity</a></li>
-		<li><a data-toggle="tab" href="#Kestrel">Kestrel</a></li>
-		<li><a data-toggle="tab" href="#Templates">Templates</a></li>
+		<li class="active"><a data-toggle="tab" href="#Identity">Identity</a></li>
 		<li><a data-toggle="tab" href="#Tooling">Tooling</a></li>
 	</ul>
 	
 	<div class="tab-content">
 		<br>
-		<div id="Mvc" class="tab-pane fade in active">
-			<div class="list-group">
-                <a href="https://github.com/aspnet/Mvc" class="list-group-item active">
-                    <h4 class="list-group-item-heading">aspnet/Mvc</h4>
-                </a>
-				
-				{% for issueItem in site.data.AspNetCore.Data.Mvc-Issues.Issues %}
-					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
-				{% endfor %}
-			</div>
-		</div>
-		<div id="Razor" class="tab-pane fade in">
-			<div class="list-group">
-                <a href="https://github.com/aspnet/Razor" class="list-group-item active">
-                    <h4 class="list-group-item-heading">aspnet/Razor</h4>
-                </a>
-				
-				{% for issueItem in site.data.AspNetCore.Data.Razor-Issues.Issues %}
-					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
-				{% endfor %}
-			</div>
-		</div>
-		<div id="SignalR" class="tab-pane fade in">
-			<div class="list-group">
-                <a href="https://github.com/aspnet/SignalR" class="list-group-item active">
-                    <h4 class="list-group-item-heading">aspnet/SignalR</h4>
-                </a>
-				
-				{% for issueItem in site.data.AspNetCore.Data.SignalR-Issues.Issues %}
-					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
-				{% endfor %}
-			</div>
-		</div>
 		<div id="Identity" class="tab-pane fade in">
 			<div class="list-group">
                 <a href="https://github.com/aspnet/Identity" class="list-group-item active">
@@ -128,17 +90,6 @@ feed: "feed"
                 </a>
 				
 				{% for issueItem in site.data.AspNetCore.Data.Identity-Issues.Issues %}
-					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
-				{% endfor %}
-			</div>
-		</div>
-		<div id="Kestrel" class="tab-pane fade in">
-			<div class="list-group">
-                		<a href="https://github.com/aspnet/KestrelHttpServer" class="list-group-item active">
-                    			<h4 class="list-group-item-heading">aspnet/KestrelHttpServer</h4>
-                		</a>
-				
-				{% for issueItem in site.data.AspNetCore.Data.Kestrel-Issues.Issues %}
 					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
 				{% endfor %}
 			</div>
