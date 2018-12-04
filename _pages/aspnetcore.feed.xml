@@ -1,23 +1,12 @@
 ---
 title : ASP.NET Core Daily Summary
-stack: "aspnetcore"
+stack: "mldotnet"
+description: Everything around WPF
 permalink: "aspnetcore/feed/"
+layout: "stackfeed"
 ---
 
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-<channel>
-        <title>{{ site.title }}: {{ page.title }}</title>
-        <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{ site.production_url }}/{{ page.permalink }}</link>
-        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        <ttl>1800</ttl>
-
-        <item>
-                <title>{{ page.title | xml_escape  }}</title>
-                <description><![CDATA[
-                    <h1>ASP.NET Blog &amp; Tweets</h1>
+<h1>ASP.NET Blog &amp; Tweets</h1>
 				
 				    {% for feedItem in site.data.AspNetCore.Data.Blog.FeedItems limit: 5 %}
                          {% include DisplayFeedItemFeed.html eventItem=feedItem %}
@@ -27,57 +16,27 @@ permalink: "aspnetcore/feed/"
                          {% include DisplayTweetItemFeed.html tweetItem=tweetItem %}
 				    {% endfor %}
 
-                    <h1>GitHub</h1>
-                    <h2>aspnet/Announcements</h2>
+
+<h1>GitHub</h1>
+
+
+ <h2>aspnet/Announcements</h2>
 				    {% for issueItem in site.data.AspNetCore.Data.Announcements-Issues.Issues %}
                         {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
-               
-                    <h2>aspnet/Home</h2>
-				    {% for issueItem in site.data.AspNetCore.Data.Home-Issues.Issues %}
+
+ <h2>aspnet/AspNetCore</h2>
+				    {% for issueItem in site.data.AspNetCore.Data.AspNetCore-Issues.Issues %}
                         {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
-                    <h2>aspnet/Mvc</h2>
-				    {% for issueItem in site.data.AspNetCore.Data.Mvc-Issues.Issues %}
-                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
-				    {% endfor %}
-
-                    <h2>aspnet/Razor</h2>
-				    {% for issueItem in site.data.AspNetCore.Data.Razor-Issues.Issues %}
-                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
-				    {% endfor %}
-
-                    <h2>aspnet/SignalR</h2>
-				    {% for issueItem in site.data.AspNetCore.Data.SignalR-Issues.Issues %}
-                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
-				    {% endfor %}
-
-                    <h2>aspnet/Identity</h2>
+                   
+<h2>aspnet/Identity</h2>
 				    {% for issueItem in site.data.AspNetCore.Data.Identity-Issues.Issues %}
                         {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
 
-                    <h2>aspnet/Kestrel</h2>
-				    {% for issueItem in site.data.AspNetCore.Data.Kestrel-Issues.Issues %}
-                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
-				    {% endfor %}
-
-                    <h2>aspnet/Templates</h2>
-				    {% for issueItem in site.data.AspNetCore.Data.Templates-Issues.Issues %}
-                        {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
-				    {% endfor %}
-
-                    <h2>aspnet/Tooling</h2>
+<h2>aspnet/Tooling</h2>
 				    {% for issueItem in site.data.AspNetCore.Data.Tooling-Issues.Issues %}
                         {% include DisplayGitHubIssueItemFeed.html issueItem=issueItem %}
 				    {% endfor %}
-
-                ]]></description>
-                <link>{{ site.production_url }}/{{page.stack}}/</link>
-                <guid isPermaLink="false">{{ site.production_url }}/{{page.stack}}/{{ site.time | date: "%Y/%m/%d" }}</guid>
-                <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        </item>
-
-</channel>
-</rss>
