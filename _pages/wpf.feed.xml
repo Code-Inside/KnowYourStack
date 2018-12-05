@@ -2,7 +2,7 @@
 title : WPF Daily Summary
 stack: "mldotnet"
 description: Everything around WPF
-permalink: "winforms/feed/"
+permalink: "wpf/feed/"
 layout: "stackfeed"
 ---
 
