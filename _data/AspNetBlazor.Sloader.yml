@@ -8,6 +8,13 @@ Crawler:
   - Repository: aspnet/blazor
     Key: GitHubIssues
     FilterByState: all
+  FeedsToCrawl:
+  - Key: Blog
+    Url: https://blogs.msdn.microsoft.com/webdev/feed/
+    LoadSocialLinkCounters: false
+    SummaryTruncateAt: 200
+    FilterByCategories:
+    - "Blazor"
 
 Drop:
   GitHubDrops:
