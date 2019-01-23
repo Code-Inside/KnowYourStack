@@ -4,11 +4,6 @@ Secrets:
   GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
 
 Crawler:
-  FeedsToCrawl:
-  - Key: Blog
-    Url: https://bulma.io/atom.xml
-    LoadSocialLinkCounters: false
-    SummaryTruncateAt: 200
   GitHubIssuesToCrawl:
   - Key: Bulma-Issues
     Repository: jgthms/bulma
