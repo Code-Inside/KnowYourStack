@@ -53,11 +53,6 @@ layout: "stackfeed"
      {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
 {% endfor %}
 
-<h2>dotnet/corert</h2>
-{% for eventItem in site.data.DotNetCore.Data.CoreRT.Events %}
-     {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
-{% endfor %}
-
 <h2>dotnet/sdk</h2>
 {% for eventItem in site.data.DotNetCore.Data.SDK.Events %}
      {% include DisplayGitHubEventItemFeed.html eventItem=eventItem %}
