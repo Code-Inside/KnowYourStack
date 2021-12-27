@@ -144,18 +144,6 @@ feed: "feed"
 			</div>
 		</div>
 		
-		<div id="CoreRT" class="tab-pane fade in">
-			<div class="list-group">
-                <a href="https://github.com/dotnet/corert" class="list-group-item active">
-                    <h4 class="list-group-item-heading">dotnet/corert</h4>
-                </a>
-				
-				{% for eventItem in site.data.DotNetCore.Data.CoreRT.Events %}
-					{% include DisplayGitHubEventItem.html eventItem=eventItem %}
-				{% endfor %}
-			</div>
-		</div>
-		
 		<div id="SDK" class="tab-pane fade in">
 			<div class="list-group">
                 <a href="https://github.com/dotnet/sdk" class="list-group-item active">
