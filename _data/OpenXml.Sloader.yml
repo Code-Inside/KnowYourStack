@@ -7,8 +7,6 @@ Crawler:
   GitHubEventsToCrawl:
   - Key: Sdk
     Repository: OfficeDev/Open-XML-SDK
-  - Key: PowerTools
-    Repository: OfficeDev/Open-Xml-PowerTools
 
 Drop:
   GitHubDrops:
