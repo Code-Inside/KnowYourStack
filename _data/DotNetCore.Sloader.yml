@@ -47,9 +47,6 @@ Crawler:
   - Key: Roslyn-Issues
     Repository: dotnet/roslyn
     FilterByState: all    
-  - Key: CoreRT-Issues
-    Repository: dotnet/corert
-    FilterByState: all    
   - Key: SDK-Issues
     Repository: dotnet/sdk
     FilterByState: all  
