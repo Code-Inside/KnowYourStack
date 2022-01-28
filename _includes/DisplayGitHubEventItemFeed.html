@@ -1,5 +1,0 @@
-{% capture dateDiffInDays %}{% include DateCheck.html date=include.eventItem.CreatedAt %}{% endcapture %}
-
-{% if dateDiffInDays contains "true" %}
-    <p><a href="{{ include.eventItem.RelatedUrl }}">{{ include.eventItem.RelatedDescription | strip_html }}</a> <small>on {{ include.eventItem.CreatedAt | date_to_long_string }} by {{ include.eventItem.Actor }}</small></p>
-{% endif %}

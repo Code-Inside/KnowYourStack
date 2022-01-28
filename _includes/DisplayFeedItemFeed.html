@@ -1,6 +1,0 @@
-{% capture dateDiffInDays %}{% include DateCheck.html date=include.feedItem.PublishedOn %}{% endcapture %}
-{% if dateDiffInDays contains "true" %}
-    <p><a href="{{ include.feedItem.Href }}">{{ include.feedItem.Title }}</a> 
-    <small>(Published on {{ include.feedItem.PublishedOn | date_to_long_string }})</small></p>
-    
-{% endif %}
