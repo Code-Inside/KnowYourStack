@@ -31,7 +31,6 @@ However, the website itself is powered by different services, which may collect 
 
 * The site is hosted on [GitHub Pages](https://help.github.com/articles/github-privacy-statement/). GitHub Pages is a service of GitHub Inc. (*88 Colin P Kelly Jr St San Francisco, CA 94107, United States*)
 * [Cloudflare](https://www.cloudflare.com/gdpr/introduction/) is used as our CDN to avoid DDOS attacks and to cache our content. Cloudflare is a service of Cloudflare Inc. (*101 Townsend St. San Francisco, CA 94107, United States*)
-* We use the CDN of [maxCDN](https://www.maxcdn.com/dpa/) and [StackPath](https://www.stackpath.com/gdpr/) for loading common Javascript & CSS files. maxCDN and StackPath is a service StackPath LLC (*2021 McKinney Ave. Suite 1100, Dallas, TX 75201, United States*)
 * __Only if you accept the tracking:__ We use [Google Analytics](https://analytics.google.com/analytics/web/) to count visitors and analyse the traffic on this site (with [IP Anonymization ](https://support.google.com/analytics/answer/2763052?hl=en))
 * __The accepted tracking is stored in a "Cookie".__ 
 
