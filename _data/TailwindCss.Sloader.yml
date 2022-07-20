@@ -1,0 +1,17 @@
+Secrets:
+  TwitterConsumerKey: $$Sloader.SecretTwitterConsumerKey$$
+  TwitterConsumerSecret: $$Sloader.SecretTwitterConsumerSecret$$
+  GitHubAccessToken: $$Sloader.SecretGitHubAccessToken$$
+
+Crawler:
+  GitHubIssuesToCrawl:
+  - Key: TailwindCss-Issues
+    Repository: tailwindlabs/tailwindcss
+    FilterByState: all
+
+Drop:
+  GitHubDrops:
+  - Owner: "Code-Inside"
+    Repo: "KnowYourStack"
+    Branch: "master"
+    FilePath: "_data/TailwindCss.json"

@@ -1,0 +1,27 @@
+---
+layout: stackpage
+title: TailwindCss
+description: Everything around TailwindCss
+type: stack
+permalink: "tailwindcss/"
+---
+{% include CheckForEmptyData.html data=site.data.TailwindCss %}
+
+<section>
+    <h2><strong>//</strong> GitHub</h2>
+
+	<div class="row">
+	<div class="col-md-12">
+
+            <div class="list-group">
+                <a href="https://github.com/tailwindlabs/tailwindcss" class="list-group-item active">
+                    <h4 class="list-group-item-heading">tailwindlabs/tailwindcss</h4>
+                </a>
+				{% for issueItem in site.data.TailwindCss.Data.TailwindCss-Issues.Issues limit: 30 %}
+					{% include DisplayGitHubIssueItem.html issueItem=issueItem %}
+				{% endfor %}
+			</div>
+        </div>
+	</div>
+	
+</section>
